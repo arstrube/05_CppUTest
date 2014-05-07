@@ -1,0 +1,97 @@
+COMMANDS I NEED, MOST RECENT FIRST
+
+# Pull from arstrube/cpputest
+# Note - specify branch & check it out, if not master:
+struar2$ git pull git@ssh.github.com:arstrube/cpputest.git travis
+
+# For a new remote branch:
+struar2$ git fetch origin # fetches all branches
+struar2$ git checkout -b new_branch origin/new_branch
+
+---------------------------------------------------------------
+
+INTRO
+
+This is how to sync two repositories using git bundle.
+Note that this doesn't work.
+
+Solution 1 doesn't work, because there will be no references
+to the original repository @maya.
+
+Solution 2 doesn't work, because the references will point
+to origin at github, and there will be no references to the
+local repository @maya.
+
+Solution 2 should work with repositories I created locally
+@maya. However, its clone, too, will be empty.
+
+SOLUTION 1
+
+# on Maya, the initial home of the repo
+Maya$ git bundle create maya.bundle --branches --tags
+
+# transfer the bundle to struar2, and continue:
+struar2$ git clone ../maya.bundle cpputest/.git --mirror
+cd cpputest
+git config core.bare false
+git reset --hard
+
+# make some commits on hostB; time to transfer back to hostA
+# use the known master branch of hostA as a basis
+struar2$ git bundle create ../struar2.bundle ^maya/master --branches --tags
+
+# copy the bundle back over to hostA and continue:
+hostA$ git remote add hostB /path/to/hostB.bundle
+# fetch all the refs from the remote (creating remote branches like hostB/master)
+hostA$ git fetch hostB
+# pull from hostB's master, for example
+hostA$ git pull
+
+# make some commits on hostA; time to transfer to hostB
+# again, use the known master branch as a basis
+hostA$ git bundle create hostA.bundle ^hostB/master --branches --tags
+# copy the bundle to hostB, **replacing** the original bundle
+# update all the refs
+hostB$ git fetch hostA
+
+# and so on and so on
+
+SOLUTION 2
+
+# on Maya, the initial home of the repo
+
+maya$ git bundle create ../maya.bundle --branches --tags
+
+# transfer the bundle to struar2, and continue:
+# make sure you are one directory level above where the 
+# repository dir must go:
+
+struar2$ git clone maya.bundle chron@struar2
+struar2$ git checkout -b sw-rtc origin/sw-rtc
+
+# make some commits on struar2; time to transfer back to maya
+# use the known branch "sw-rtc" of maya as a basis
+
+struar2$ git bundle create ../struar2.bundle ^origin/sw-rtc --branches --tags
+
+# copy the bundle back over to maya and continue by adding
+# the remote reference to the original repository once:
+
+maya$ git remote add struar2 ../struar2.bundle
+
+# fetch all the refs from the remote (creating remote branches like 
+# struar2/sw-rtc)
+
+maya$ git fetch struar2
+
+# pull from hostB's master, for example
+maya$ git pull
+
+# make some commits on hostA; time to transfer to hostB
+# again, use the known master branch as a basis
+hostA$ git bundle create hostA.bundle ^hostB/master --branches --tags
+# copy the bundle to hostB, **replacing** the original bundle
+# update all the refs
+hostB$ git fetch hostA
+
+# and so on and so on

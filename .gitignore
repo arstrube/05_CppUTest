@@ -1,0 +1,7 @@
+/cpputest
+/out
+*.eap
+*.exe
+*.depend
+*.layout
+*.stackdump
