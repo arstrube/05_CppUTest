@@ -160,12 +160,6 @@
 			<Option target="RunAllTestsExt" />
 			<Option target="Examples" />
 		</Unit>
-		<Unit filename="cpputest\include\CppUTestExt\GTestInterface.h">
-			<Option target="CppUTestExt" />
-			<Option target="RunAllTests" />
-			<Option target="RunAllTestsExt" />
-			<Option target="Examples" />
-		</Unit>
 		<Unit filename="cpputest\include\CppUTestExt\MemoryReportAllocator.h">
 			<Option target="CppUTestExt" />
 			<Option target="RunAllTests" />
@@ -204,15 +198,8 @@
 			<Option target="Examples" />
 		</Unit>
 		<Unit filename="cpputest\include\CppUTestExt\MockExpectedCall.h" />
-		<Unit filename="cpputest\include\CppUTestExt\MockExpectedFunctionCall.h">
-			<Option target="CppUTestExt" />
-			<Option target="RunAllTests" />
-			<Option target="RunAllTestsExt" />
-			<Option target="Examples" />
-		</Unit>
-		<Unit filename="cpputest\include\CppUTestExt\MockExpectedFunctionsList.h" />
+		<Unit filename="cpputest\include\CppUTestExt\MockExpectedCallsList.h" />
 		<Unit filename="cpputest\include\CppUTestExt\MockFailure.h" />
-		<Unit filename="cpputest\include\CppUTestExt\MockFunctionCall.h" />
 		<Unit filename="cpputest\include\CppUTestExt\MockNamedValue.h" />
 		<Unit filename="cpputest\include\CppUTestExt\MockSupport.h" />
 		<Unit filename="cpputest\include\CppUTestExt\MockSupportPlugin.h" />
@@ -266,30 +253,12 @@
 			<Option target="RunAllTestsExt" />
 		</Unit>
 		<Unit filename="cpputest\src\CppUTestExt\MockActualCall.cpp" />
-		<Unit filename="cpputest\src\CppUTestExt\MockActualFunctionCall.cpp">
-			<Option compile="0" />
-			<Option link="0" />
-			<Option target="CppUTestExt" />
-			<Option target="RunAllTestsExt" />
-		</Unit>
 		<Unit filename="cpputest\src\CppUTestExt\MockExpectedCall.cpp" />
-		<Unit filename="cpputest\src\CppUTestExt\MockExpectedFunctionCall.cpp">
-			<Option compile="0" />
-			<Option link="0" />
-			<Option target="CppUTestExt" />
-			<Option target="RunAllTestsExt" />
-		</Unit>
-		<Unit filename="cpputest\src\CppUTestExt\MockExpectedFunctionsList.cpp">
+		<Unit filename="cpputest\src\CppUTestExt\MockExpectedCallsList.cpp">
 			<Option target="CppUTestExt" />
 			<Option target="RunAllTestsExt" />
 		</Unit>
 		<Unit filename="cpputest\src\CppUTestExt\MockFailure.cpp">
-			<Option target="CppUTestExt" />
-			<Option target="RunAllTestsExt" />
-		</Unit>
-		<Unit filename="cpputest\src\CppUTestExt\MockFunctionCall.cpp">
-			<Option compile="0" />
-			<Option link="0" />
 			<Option target="CppUTestExt" />
 			<Option target="RunAllTestsExt" />
 		</Unit>
