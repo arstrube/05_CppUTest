@@ -38,11 +38,6 @@
 				<Option type="1" />
 				<Option compiler="cygwin" />
 				<Option parameters="-v" />
-				<Option projectCompilerOptionsRelation="1" />
-				<Compiler>
-					<Add option="-Werror" />
-					<Add option='-include &quot;CppuTest/MemoryLeakDetectorMallocMacros.h&quot;' />
-				</Compiler>
 				<Linker>
 					<Add library="CppUTest" />
 					<Add directory="cpputest\lib" />
