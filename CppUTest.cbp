@@ -174,12 +174,6 @@
 			<Option target="Examples" />
 		</Unit>
 		<Unit filename="cpputest\include\CppUTestExt\MockActualCall.h" />
-		<Unit filename="cpputest\include\CppUTestExt\MockActualFunctionCall.h">
-			<Option target="CppUTestExt" />
-			<Option target="RunAllTests" />
-			<Option target="RunAllTestsExt" />
-			<Option target="Examples" />
-		</Unit>
 		<Unit filename="cpputest\include\CppUTestExt\MockCheckedActualCall.h">
 			<Option target="CppUTestExt" />
 			<Option target="RunAllTests" />
