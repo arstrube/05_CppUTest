@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="CppUTest" />
+		<Option pch_mode="2" />
+		<Option compiler="gnu_gcc_481_compiler_64_bit" />
+		<Build>
+			<Target title="CppUTest">
+				<Option output="cpputest/lib/$(TARGET_NAME)" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="out/" />
+				<Option type="2" />
+				<Option compiler="gnu_gcc_481_compiler_64_bit" />
+			</Target>
+			<Target title="CppUTestExt">
+				<Option output="cpputest/lib/$(TARGET_NAME)" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="out/" />
+				<Option type="2" />
+				<Option compiler="gnu_gcc_481_compiler_64_bit" />
+			</Target>
+			<Target title="RunAllTests">
+				<Option output="$(TARGET_NAME).exe" prefix_auto="1" extension_auto="0" />
+				<Option object_output="out" />
+				<Option type="1" />
+				<Option compiler="gnu_gcc_481_compiler_64_bit" />
+				<Option parameters="-n_64BitAddressPrintsCorrectly" />
+				<Linker>
+					<Add library="CppUTest" />
+					<Add library="CppUTestExt" />
+					<Add directory="cpputest/lib" />
+				</Linker>
+			</Target>
+			<Target title="RunAllTestsExt">
+				<Option output="$(TARGET_NAME).exe" prefix_auto="1" extension_auto="0" />
+				<Option object_output="out" />
+				<Option type="1" />
+				<Option compiler="gnu_gcc_481_compiler_64_bit" />
+				<Option parameters="-v" />
+				<Linker>
+					<Add library="CppUTest" />
+					<Add library="CppUTestExt" />
+					<Add directory="cpputest/lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-pedantic-errors" />
+			<Add option="-pedantic" />
+			<Add option="-Wextra" />
+			<Add option="-Wall" />
+			<Add option="-g" />
+			<Add directory="cpputest/include" />
+		</Compiler>
+		<Unit filename="cpputest/include/CppUTestExt/CodeMemoryReportFormatter.h" />
+		<Unit filename="cpputest/include/CppUTestExt/CppUTestGMock/gmock/gmock.h" />
+		<Unit filename="cpputest/include/CppUTestExt/CppUTestGTest/gtest/gtest.h" />
+		<Unit filename="cpputest/include/CppUTestExt/GMock.h" />
+		<Unit filename="cpputest/include/CppUTestExt/GTestConvertor.h" />
+		<Unit filename="cpputest/include/CppUTestExt/GTestInterface.h" />
+		<Unit filename="cpputest/include/CppUTestExt/MemoryReportAllocator.h" />
+		<Unit filename="cpputest/include/CppUTestExt/MemoryReportFormatter.h" />
+		<Unit filename="cpputest/include/CppUTestExt/MemoryReporterPlugin.h" />
+		<Unit filename="cpputest/include/CppUTestExt/MockActualFunctionCall.h" />
+		<Unit filename="cpputest/include/CppUTestExt/MockExpectedFunctionCall.h" />
+		<Unit filename="cpputest/include/CppUTestExt/MockExpectedFunctionsList.h" />
+		<Unit filename="cpputest/include/CppUTestExt/MockFailure.h" />
+		<Unit filename="cpputest/include/CppUTestExt/MockFunctionCall.h" />
+		<Unit filename="cpputest/include/CppUTestExt/MockNamedValue.h" />
+		<Unit filename="cpputest/include/CppUTestExt/MockSupport.h" />
+		<Unit filename="cpputest/include/CppUTestExt/MockSupportPlugin.h" />
+		<Unit filename="cpputest/include/CppUTestExt/MockSupport_c.h" />
+		<Unit filename="cpputest/include/CppUTestExt/OrderedTest.h" />
+		<Unit filename="cpputest/include/CppUTest/CommandLineArguments.h" />
+		<Unit filename="cpputest/include/CppUTest/CommandLineTestRunner.h" />
+		<Unit filename="cpputest/include/CppUTest/CppUTestConfig.h" />
+		<Unit filename="cpputest/include/CppUTest/JUnitTestOutput.h" />
+		<Unit filename="cpputest/include/CppUTest/MemoryLeakDetector.h" />
+		<Unit filename="cpputest/include/CppUTest/MemoryLeakDetectorMallocMacros.h" />
+		<Unit filename="cpputest/include/CppUTest/MemoryLeakDetectorNewMacros.h" />
+		<Unit filename="cpputest/include/CppUTest/MemoryLeakWarningPlugin.h" />
+		<Unit filename="cpputest/include/CppUTest/PlatformSpecificFunctions.h" />
+		<Unit filename="cpputest/include/CppUTest/PlatformSpecificFunctions_c.h" />
+		<Unit filename="cpputest/include/CppUTest/SimpleString.h" />
+		<Unit filename="cpputest/include/CppUTest/StandardCLibrary.h" />
+		<Unit filename="cpputest/include/CppUTest/TestFailure.h" />
+		<Unit filename="cpputest/include/CppUTest/TestFilter.h" />
+		<Unit filename="cpputest/include/CppUTest/TestHarness.h" />
+		<Unit filename="cpputest/include/CppUTest/TestHarness_c.h" />
+		<Unit filename="cpputest/include/CppUTest/TestMemoryAllocator.h" />
+		<Unit filename="cpputest/include/CppUTest/TestOutput.h" />
+		<Unit filename="cpputest/include/CppUTest/TestPlugin.h" />
+		<Unit filename="cpputest/include/CppUTest/TestRegistry.h" />
+		<Unit filename="cpputest/include/CppUTest/TestResult.h" />
+		<Unit filename="cpputest/include/CppUTest/TestTestingFixture.h" />
+		<Unit filename="cpputest/include/CppUTest/Utest.h" />
+		<Unit filename="cpputest/include/CppUTest/UtestMacros.h" />
+		<Unit filename="cpputest/include/Platforms/Gcc/Platform.h" />
+		<Unit filename="cpputest/include/Platforms/StarterKit/Platform.h" />
+		<Unit filename="cpputest/include/Platforms/Symbian/Platform.h" />
+		<Unit filename="cpputest/include/Platforms/VisualCpp/Platform.h" />
+		<Unit filename="cpputest/include/Platforms/VisualCpp/stdint.h" />
+		<Unit filename="cpputest/include/Platforms/c2000/Platform.h" />
+		<Unit filename="cpputest/include/Platforms/c2000/stdint.h" />
+		<Unit filename="cpputest/src/CppUTestExt/CodeMemoryReportFormatter.cpp">
+			<Option target="CppUTestExt" />
+			<Option target="RunAllTestsExt" />
+		</Unit>
+		<Unit filename="cpputest/src/CppUTestExt/MemoryReportAllocator.cpp">
+			<Option target="CppUTestExt" />
+			<Option target="RunAllTestsExt" />
+		</Unit>
+		<Unit filename="cpputest/src/CppUTestExt/MemoryReportFormatter.cpp">
+			<Option target="CppUTestExt" />
+			<Option target="RunAllTestsExt" />
+		</Unit>
+		<Unit filename="cpputest/src/CppUTestExt/MemoryReporterPlugin.cpp">
+			<Option target="CppUTestExt" />
+			<Option target="RunAllTestsExt" />
+		</Unit>
+		<Unit filename="cpputest/src/CppUTestExt/MockActualFunctionCall.cpp">
+			<Option target="CppUTestExt" />
+			<Option target="RunAllTestsExt" />
+		</Unit>
+		<Unit filename="cpputest/src/CppUTestExt/MockExpectedFunctionCall.cpp">
+			<Option target="CppUTestExt" />
+			<Option target="RunAllTestsExt" />
+		</Unit>
+		<Unit filename="cpputest/src/CppUTestExt/MockExpectedFunctionsList.cpp">
+			<Option target="CppUTestExt" />
+			<Option target="RunAllTestsExt" />
+		</Unit>
+		<Unit filename="cpputest/src/CppUTestExt/MockFailure.cpp">
+			<Option target="CppUTestExt" />
+			<Option target="RunAllTestsExt" />
+		</Unit>
+		<Unit filename="cpputest/src/CppUTestExt/MockFunctionCall.cpp">
+			<Option target="CppUTestExt" />
+			<Option target="RunAllTestsExt" />
+		</Unit>
+		<Unit filename="cpputest/src/CppUTestExt/MockNamedValue.cpp">
+			<Option target="CppUTestExt" />
+			<Option target="RunAllTestsExt" />
+		</Unit>
+		<Unit filename="cpputest/src/CppUTestExt/MockSupport.cpp">
+			<Option target="CppUTestExt" />
+			<Option target="RunAllTestsExt" />
+		</Unit>
+		<Unit filename="cpputest/src/CppUTestExt/MockSupportPlugin.cpp">
+			<Option target="CppUTestExt" />
+			<Option target="RunAllTestsExt" />
+		</Unit>
+		<Unit filename="cpputest/src/CppUTestExt/MockSupport_c.cpp">
+			<Option target="CppUTestExt" />
+			<Option target="RunAllTestsExt" />
+		</Unit>
+		<Unit filename="cpputest/src/CppUTestExt/OrderedTest.cpp">
+			<Option target="CppUTestExt" />
+			<Option target="RunAllTestsExt" />
+		</Unit>
+		<Unit filename="cpputest/src/CppUTest/CommandLineArguments.cpp">
+			<Option target="CppUTest" />
+		</Unit>
+		<Unit filename="cpputest/src/CppUTest/CommandLineTestRunner.cpp">
+			<Option target="CppUTest" />
+		</Unit>
+		<Unit filename="cpputest/src/CppUTest/JUnitTestOutput.cpp">
+			<Option target="CppUTest" />
+		</Unit>
+		<Unit filename="cpputest/src/CppUTest/MemoryLeakDetector.cpp">
+			<Option target="CppUTest" />
+		</Unit>
+		<Unit filename="cpputest/src/CppUTest/MemoryLeakWarningPlugin.cpp">
+			<Option target="CppUTest" />
+		</Unit>
+		<Unit filename="cpputest/src/CppUTest/SimpleString.cpp">
+			<Option target="CppUTest" />
+		</Unit>
+		<Unit filename="cpputest/src/CppUTest/TestFailure.cpp">
+			<Option target="CppUTest" />
+		</Unit>
+		<Unit filename="cpputest/src/CppUTest/TestFilter.cpp">
+			<Option target="CppUTest" />
+		</Unit>
+		<Unit filename="cpputest/src/CppUTest/TestHarness_c.cpp">
+			<Option target="CppUTest" />
+		</Unit>
+		<Unit filename="cpputest/src/CppUTest/TestMemoryAllocator.cpp">
+			<Option target="CppUTest" />
+		</Unit>
+		<Unit filename="cpputest/src/CppUTest/TestOutput.cpp">
+			<Option target="CppUTest" />
+		</Unit>
+		<Unit filename="cpputest/src/CppUTest/TestPlugin.cpp">
+			<Option target="CppUTest" />
+		</Unit>
+		<Unit filename="cpputest/src/CppUTest/TestRegistry.cpp">
+			<Option target="CppUTest" />
+		</Unit>
+		<Unit filename="cpputest/src/CppUTest/TestResult.cpp">
+			<Option target="CppUTest" />
+		</Unit>
+		<Unit filename="cpputest/src/CppUTest/Utest.cpp">
+			<Option target="CppUTest" />
+		</Unit>
+		<Unit filename="cpputest/src/Platforms/C2000/UtestPlatform.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="CppUTest" />
+		</Unit>
+		<Unit filename="cpputest/src/Platforms/Gcc/UtestPlatform.cpp">
+			<Option target="CppUTest" />
+		</Unit>
+		<Unit filename="cpputest/tests/AllTests.cpp">
+			<Option target="RunAllTests" />
+		</Unit>
+		<Unit filename="cpputest/tests/AllTests.h">
+			<Option target="RunAllTests" />
+		</Unit>
+		<Unit filename="cpputest/tests/AllocLetTestFree.c">
+			<Option compilerVar="CC" />
+			<Option target="RunAllTests" />
+		</Unit>
+		<Unit filename="cpputest/tests/AllocLetTestFree.h">
+			<Option target="RunAllTests" />
+		</Unit>
+		<Unit filename="cpputest/tests/AllocLetTestFreeTest.cpp">
+			<Option target="RunAllTests" />
+		</Unit>
+		<Unit filename="cpputest/tests/AllocationInCFile.c">
+			<Option compilerVar="CC" />
+			<Option target="RunAllTests" />
+		</Unit>
+		<Unit filename="cpputest/tests/AllocationInCFile.h">
+			<Option target="RunAllTests" />
+		</Unit>
+		<Unit filename="cpputest/tests/AllocationInCppFile.cpp">
+			<Option target="RunAllTests" />
+		</Unit>
+		<Unit filename="cpputest/tests/AllocationInCppFile.h">
+			<Option target="RunAllTests" />
+		</Unit>
+		<Unit filename="cpputest/tests/CheatSheetTest.cpp">
+			<Option target="RunAllTests" />
+		</Unit>
+		<Unit filename="cpputest/tests/CommandLineArgumentsTest.cpp">
+			<Option target="RunAllTests" />
+		</Unit>
+		<Unit filename="cpputest/tests/CommandLineTestRunnerTest.cpp">
+			<Option target="RunAllTests" />
+		</Unit>
+		<Unit filename="cpputest/tests/CppUTestExt/AllTests.cpp">
+			<Option target="RunAllTestsExt" />
+		</Unit>
+		<Unit filename="cpputest/tests/CppUTestExt/TestCodeMemoryReportFormatter.cpp">
+			<Option target="RunAllTestsExt" />
+		</Unit>
+		<Unit filename="cpputest/tests/CppUTestExt/TestGMock.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="RunAllTestsExt" />
+		</Unit>
+		<Unit filename="cpputest/tests/CppUTestExt/TestGTest.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="RunAllTestsExt" />
+		</Unit>
+		<Unit filename="cpputest/tests/CppUTestExt/TestMemoryReportAllocator.cpp">
+			<Option target="RunAllTestsExt" />
+		</Unit>
+		<Unit filename="cpputest/tests/CppUTestExt/TestMemoryReportFormatter.cpp">
+			<Option target="RunAllTestsExt" />
+		</Unit>
+		<Unit filename="cpputest/tests/CppUTestExt/TestMemoryReporterPlugin.cpp">
+			<Option target="RunAllTestsExt" />
+		</Unit>
+		<Unit filename="cpputest/tests/CppUTestExt/TestMockActualFunctionCall.cpp">
+			<Option target="RunAllTestsExt" />
+		</Unit>
+		<Unit filename="cpputest/tests/CppUTestExt/TestMockCheatSheet.cpp">
+			<Option target="RunAllTestsExt" />
+		</Unit>
+		<Unit filename="cpputest/tests/CppUTestExt/TestMockExpectedFunctionCall.cpp">
+			<Option target="RunAllTestsExt" />
+		</Unit>
+		<Unit filename="cpputest/tests/CppUTestExt/TestMockExpectedFunctionsList.cpp">
+			<Option target="RunAllTestsExt" />
+		</Unit>
+		<Unit filename="cpputest/tests/CppUTestExt/TestMockFailure.cpp">
+			<Option target="RunAllTestsExt" />
+		</Unit>
+		<Unit filename="cpputest/tests/CppUTestExt/TestMockFailure.h">
+			<Option target="RunAllTestsExt" />
+		</Unit>
+		<Unit filename="cpputest/tests/CppUTestExt/TestMockPlugin.cpp">
+			<Option target="RunAllTestsExt" />
+		</Unit>
+		<Unit filename="cpputest/tests/CppUTestExt/TestMockSupport.cpp">
+			<Option target="RunAllTestsExt" />
+		</Unit>
+		<Unit filename="cpputest/tests/CppUTestExt/TestMockSupport_c.cpp">
+			<Option target="RunAllTestsExt" />
+		</Unit>
+		<Unit filename="cpputest/tests/CppUTestExt/TestMockSupport_cCFile.c">
+			<Option compilerVar="CC" />
+			<Option target="RunAllTestsExt" />
+		</Unit>
+		<Unit filename="cpputest/tests/CppUTestExt/TestMockSupport_cCFile.h">
+			<Option target="RunAllTestsExt" />
+		</Unit>
+		<Unit filename="cpputest/tests/CppUTestExt/TestOrderedTest.cpp">
+			<Option target="RunAllTestsExt" />
+		</Unit>
+		<Unit filename="cpputest/tests/JUnitOutputTest.cpp">
+			<Option target="RunAllTests" />
+		</Unit>
+		<Unit filename="cpputest/tests/MemoryLeakDetectorTest.cpp">
+			<Option target="RunAllTests" />
+		</Unit>
+		<Unit filename="cpputest/tests/MemoryLeakOperatorOverloadsTest.cpp">
+			<Option target="RunAllTests" />
+		</Unit>
+		<Unit filename="cpputest/tests/MemoryLeakWarningTest.cpp">
+			<Option target="RunAllTests" />
+		</Unit>
+		<Unit filename="cpputest/tests/NullTestTest.cpp">
+			<Option target="RunAllTests" />
+		</Unit>
+		<Unit filename="cpputest/tests/PluginTest.cpp">
+			<Option target="RunAllTests" />
+		</Unit>
+		<Unit filename="cpputest/tests/PreprocessorTest.cpp">
+			<Option target="RunAllTests" />
+		</Unit>
+		<Unit filename="cpputest/tests/SetPluginTest.cpp">
+			<Option target="RunAllTests" />
+		</Unit>
+		<Unit filename="cpputest/tests/SimpleStringTest.cpp">
+			<Option target="RunAllTests" />
+		</Unit>
+		<Unit filename="cpputest/tests/TestFailureTest.cpp">
+			<Option target="RunAllTests" />
+		</Unit>
+		<Unit filename="cpputest/tests/TestFilterTest.cpp">
+			<Option target="RunAllTests" />
+		</Unit>
+		<Unit filename="cpputest/tests/TestHarness_cTest.cpp">
+			<Option target="RunAllTests" />
+		</Unit>
+		<Unit filename="cpputest/tests/TestHarness_cTestCFile.c">
+			<Option compilerVar="CC" />
+			<Option target="RunAllTests" />
+		</Unit>
+		<Unit filename="cpputest/tests/TestInstallerTest.cpp">
+			<Option target="RunAllTests" />
+		</Unit>
+		<Unit filename="cpputest/tests/TestMemoryAllocatorTest.cpp">
+			<Option target="RunAllTests" />
+		</Unit>
+		<Unit filename="cpputest/tests/TestOutputTest.cpp">
+			<Option target="RunAllTests" />
+		</Unit>
+		<Unit filename="cpputest/tests/TestRegistryTest.cpp">
+			<Option target="RunAllTests" />
+		</Unit>
+		<Unit filename="cpputest/tests/TestResultTest.cpp">
+			<Option target="RunAllTests" />
+		</Unit>
+		<Unit filename="cpputest/tests/TestUTestMacro.cpp">
+			<Option target="RunAllTests" />
+		</Unit>
+		<Unit filename="cpputest/tests/UtestTest.cpp">
+			<Option target="RunAllTests" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

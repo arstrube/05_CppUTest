@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="MockCrash" />
+		<Option pch_mode="2" />
+		<Option default_target="Test" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="dbg">
+				<Option platforms="Windows;" />
+				<Option output="../out/$(PROJECT_NAME)$(TARGET_NAME)" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../out/" />
+				<Option object_output="../out/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="-n Crash -gMockCrash" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="tst">
+				<Option platforms="Windows;" />
+				<Option output="../out/$(PROJECT_NAME)$(TARGET_NAME)" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../out/" />
+				<Option object_output="../out/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<ExtraCommands>
+					<Add after="$(TARGET_OUTPUT_FILE)" />
+					<Mode after="always" />
+				</ExtraCommands>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-Werror" />
+			<Add option="-DCPPUTEST_USE_MEM_LEAK_DETECTION" />
+			<Add directory="../cpputest/include" />
+		</Compiler>
+		<Linker>
+			<Add library="CppUTestExt" />
+			<Add library="CppUTest" />
+			<Add directory="../cpputest/lib" />
+		</Linker>
+		<Unit filename="mock_crash.cpp" />
+		<Unit filename="xassert.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="xassert.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
