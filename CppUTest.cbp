@@ -59,6 +59,9 @@
 				</Linker>
 			</Target>
 		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="CppUTest;CppUTestExt;RunAllTests;RunAllTestsExt;Examples;" />
+		</VirtualTargets>
 		<Compiler>
 			<Add option="-pedantic" />
 			<Add option="-Wextra" />
