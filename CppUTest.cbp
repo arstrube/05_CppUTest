@@ -587,9 +587,6 @@
 		<Unit filename="cpputest\tests\MemoryLeakWarningTest.cpp">
 			<Option target="RunAllTests" />
 		</Unit>
-		<Unit filename="cpputest\tests\NullTestTest.cpp">
-			<Option target="RunAllTests" />
-		</Unit>
 		<Unit filename="cpputest\tests\PluginTest.cpp">
 			<Option target="RunAllTests" />
 		</Unit>
