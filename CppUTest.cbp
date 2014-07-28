@@ -599,6 +599,9 @@
 		<Unit filename="cpputest\tests\SimpleStringTest.cpp">
 			<Option target="RunAllTests" />
 		</Unit>
+		<Unit filename="cpputest\tests\TestFailureNaNTest.cpp">
+			<Option target="RunAllTests" />
+		</Unit>
 		<Unit filename="cpputest\tests\TestFailureTest.cpp">
 			<Option target="RunAllTests" />
 		</Unit>
