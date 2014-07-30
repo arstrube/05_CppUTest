@@ -471,10 +471,51 @@
 			<Option compile="0" />
 			<Option link="0" />
 			<Option target="CppUTest" />
+			<Option target="RunAllTests" />
+		</Unit>
+		<Unit filename="cpputest\src\Platforms\GccNoStdC\UtestPlatform.cpp">
+			<Option link="0" />
+			<Option target="CppUTest" />
+			<Option target="RunAllTests" />
 		</Unit>
 		<Unit filename="cpputest\src\Platforms\Gcc\UtestPlatform.cpp">
 			<Option compiler="cygwin" use="1" buildCommand="$compiler $includes -c $file -o $object" />
 			<Option target="CppUTest" />
+			<Option target="RunAllTests" />
+		</Unit>
+		<Unit filename="cpputest\src\Platforms\Iar\UtestPlatform.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="CppUTest" />
+		</Unit>
+		<Unit filename="cpputest\src\Platforms\StarterKit\StarterMemoryLeakWarning.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="CppUTest" />
+		</Unit>
+		<Unit filename="cpputest\src\Platforms\StarterKit\UtestPlatform.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="CppUTest" />
+		</Unit>
+		<Unit filename="cpputest\src\Platforms\Symbian\SymbianMemoryLeakWarning.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="CppUTest" />
+		</Unit>
+		<Unit filename="cpputest\src\Platforms\Symbian\UtestPlatform.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="CppUTest" />
+		</Unit>
+		<Unit filename="cpputest\src\Platforms\VisualCpp\UtestPlatform.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="CppUTest" />
+		</Unit>
+		<Unit filename="cpputest\src\Platforms\armcc\UtestPlatform.cpp">
+			<Option target="CppUTest" />
+			<Option target="RunAllTests" />
 		</Unit>
 		<Unit filename="cpputest\tests\AllTests.cpp">
 			<Option target="RunAllTests" />
