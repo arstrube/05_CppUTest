@@ -26,11 +26,6 @@
 				<Option type="1" />
 				<Option compiler="cygwin" />
 				<Option parameters="-v" />
-				<Linker>
-					<Add library="CppUTest" />
-					<Add library="CppUTestExt" />
-					<Add directory="cpputest\lib" />
-				</Linker>
 			</Target>
 			<Target title="RunAllTestsExt">
 				<Option output="$(TARGET_NAME).exe" prefix_auto="1" extension_auto="0" />
@@ -424,59 +419,72 @@
 		</Unit>
 		<Unit filename="cpputest\src\CppUTest\CommandLineArguments.cpp">
 			<Option target="CppUTest" />
+			<Option target="RunAllTests" />
 		</Unit>
 		<Unit filename="cpputest\src\CppUTest\CommandLineTestRunner.cpp">
 			<Option target="CppUTest" />
+			<Option target="RunAllTests" />
 		</Unit>
 		<Unit filename="cpputest\src\CppUTest\JUnitTestOutput.cpp">
 			<Option target="CppUTest" />
+			<Option target="RunAllTests" />
 		</Unit>
 		<Unit filename="cpputest\src\CppUTest\MemoryLeakDetector.cpp">
 			<Option target="CppUTest" />
+			<Option target="RunAllTests" />
 		</Unit>
 		<Unit filename="cpputest\src\CppUTest\MemoryLeakWarningPlugin.cpp">
 			<Option target="CppUTest" />
+			<Option target="RunAllTests" />
 		</Unit>
 		<Unit filename="cpputest\src\CppUTest\SimpleString.cpp">
 			<Option target="CppUTest" />
+			<Option target="RunAllTests" />
 		</Unit>
 		<Unit filename="cpputest\src\CppUTest\TestFailure.cpp">
 			<Option target="CppUTest" />
+			<Option target="RunAllTests" />
 		</Unit>
 		<Unit filename="cpputest\src\CppUTest\TestFilter.cpp">
 			<Option target="CppUTest" />
+			<Option target="RunAllTests" />
 		</Unit>
 		<Unit filename="cpputest\src\CppUTest\TestHarness_c.cpp">
 			<Option target="CppUTest" />
+			<Option target="RunAllTests" />
 		</Unit>
 		<Unit filename="cpputest\src\CppUTest\TestMemoryAllocator.cpp">
 			<Option target="CppUTest" />
+			<Option target="RunAllTests" />
 		</Unit>
 		<Unit filename="cpputest\src\CppUTest\TestOutput.cpp">
 			<Option target="CppUTest" />
+			<Option target="RunAllTests" />
 		</Unit>
 		<Unit filename="cpputest\src\CppUTest\TestPlugin.cpp">
 			<Option target="CppUTest" />
+			<Option target="RunAllTests" />
 		</Unit>
 		<Unit filename="cpputest\src\CppUTest\TestRegistry.cpp">
 			<Option target="CppUTest" />
+			<Option target="RunAllTests" />
 		</Unit>
 		<Unit filename="cpputest\src\CppUTest\TestResult.cpp">
 			<Option target="CppUTest" />
+			<Option target="RunAllTests" />
 		</Unit>
 		<Unit filename="cpputest\src\CppUTest\Utest.cpp">
 			<Option target="CppUTest" />
+			<Option target="RunAllTests" />
 		</Unit>
 		<Unit filename="cpputest\src\Platforms\C2000\UtestPlatform.cpp">
 			<Option compile="0" />
 			<Option link="0" />
 			<Option target="CppUTest" />
-			<Option target="RunAllTests" />
 		</Unit>
 		<Unit filename="cpputest\src\Platforms\GccNoStdC\UtestPlatform.cpp">
 			<Option link="0" />
 			<Option target="CppUTest" />
-			<Option target="RunAllTests" />
 		</Unit>
 		<Unit filename="cpputest\src\Platforms\Gcc\UtestPlatform.cpp">
 			<Option compiler="cygwin" use="1" buildCommand="$compiler $includes -c $file -o $object" />
@@ -514,8 +522,9 @@
 			<Option target="CppUTest" />
 		</Unit>
 		<Unit filename="cpputest\src\Platforms\armcc\UtestPlatform.cpp">
+			<Option compile="0" />
+			<Option link="0" />
 			<Option target="CppUTest" />
-			<Option target="RunAllTests" />
 		</Unit>
 		<Unit filename="cpputest\tests\AllTests.cpp">
 			<Option target="RunAllTests" />
