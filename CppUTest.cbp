@@ -333,11 +333,6 @@
 			<Option target="RunAllTestsExt" />
 			<Option target="Examples" />
 		</Unit>
-		<Unit filename="cpputest\include\Platforms\StarterKit\Platform.h">
-			<Option target="CppUTest" />
-			<Option target="RunAllTestsExt" />
-			<Option target="Examples" />
-		</Unit>
 		<Unit filename="cpputest\include\Platforms\Symbian\Platform.h">
 			<Option target="CppUTest" />
 			<Option target="RunAllTestsExt" />
@@ -492,17 +487,6 @@
 			<Option target="RunAllTests" />
 		</Unit>
 		<Unit filename="cpputest\src\Platforms\Iar\UtestPlatform.cpp">
-			<Option compile="0" />
-			<Option link="0" />
-			<Option target="CppUTest" />
-		</Unit>
-		<Unit filename="cpputest\src\Platforms\StarterKit\StarterMemoryLeakWarning.cpp">
-			<Option compile="0" />
-			<Option link="0" />
-			<Option target="CppUTest" />
-		</Unit>
-		<Unit filename="cpputest\src\Platforms\StarterKit\UtestPlatform.cpp">
-			<Option compile="0" />
 			<Option link="0" />
 			<Option target="CppUTest" />
 		</Unit>
