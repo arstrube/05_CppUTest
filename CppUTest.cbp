@@ -63,6 +63,7 @@
 			<Add option="-Wall" />
 			<Add option="-g" />
 			<Add option="-Werror" />
+			<Add option="-Wconversion" />
 			<Add option='-include &quot;CppuTest/MemoryLeakDetectorMallocMacros.h&quot;' />
 			<Add option='-include &quot;CppuTest/MemoryLeakDetectorNewMacros.h&quot;' />
 			<Add directory="cpputest\include" />
@@ -487,6 +488,7 @@
 			<Option target="RunAllTests" />
 		</Unit>
 		<Unit filename="cpputest\src\Platforms\Iar\UtestPlatform.cpp">
+			<Option compile="0" />
 			<Option link="0" />
 			<Option target="CppUTest" />
 		</Unit>
