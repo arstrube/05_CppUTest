@@ -1,10 +1,12 @@
+/cdt.testrunner
+/cdt.testrunner.cpputest
 /cpputest
 /cpputest33
 /cpputest34
 /cpputest35
 /cpputest.github.io
 /CppUTestEclipsePlugin
-/eclipse.testrunner
+/gtest-*
 /out
 *.eap
 *.exe
