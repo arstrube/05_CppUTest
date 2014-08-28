@@ -6,6 +6,7 @@
 /cpputest.github.io
 /CppUTestEclipsePlugin
 /gtest-*
+/images
 /out
 *.eap
 *.exe
