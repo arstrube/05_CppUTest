@@ -1,13 +1,4 @@
-/cdt.testrunner.cpputest
-/cpputest
-/cpputest33
-/cpputest34
-/cpputest35
-/cpputest.github.io
-/CppUTestEclipsePlugin
-/gtest
-/images
-/out
+*/
 *.eap
 *.exe
 *.depend
