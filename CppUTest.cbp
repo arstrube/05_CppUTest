@@ -259,6 +259,9 @@
 			<Option target="RunAllTestsExt" />
 			<Option target="Examples" />
 		</Unit>
+		<Unit filename="cpputest\include\CppUTest\SimpleMutex.h">
+			<Option target="CppUTest" />
+		</Unit>
 		<Unit filename="cpputest\include\CppUTest\SimpleString.h">
 			<Option target="CppUTest" />
 			<Option target="RunAllTestsExt" />
@@ -430,6 +433,10 @@
 			<Option target="RunAllTests" />
 		</Unit>
 		<Unit filename="cpputest\src\CppUTest\MemoryLeakWarningPlugin.cpp">
+			<Option target="CppUTest" />
+			<Option target="RunAllTests" />
+		</Unit>
+		<Unit filename="cpputest\src\CppUTest\SimpleMutex.cpp">
 			<Option target="CppUTest" />
 			<Option target="RunAllTests" />
 		</Unit>
