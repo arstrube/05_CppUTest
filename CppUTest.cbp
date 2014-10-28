@@ -224,6 +224,10 @@
 			<Option target="RunAllTestsExt" />
 			<Option target="Examples" />
 		</Unit>
+		<Unit filename="cpputest\include\CppUTest\CrashReporter.h">
+			<Option target="CppUTest" />
+			<Option target="RunAllTests" />
+		</Unit>
 		<Unit filename="cpputest\include\CppUTest\JUnitTestOutput.h">
 			<Option target="CppUTest" />
 			<Option target="RunAllTestsExt" />
@@ -421,6 +425,10 @@
 			<Option target="RunAllTests" />
 		</Unit>
 		<Unit filename="cpputest\src\CppUTest\CommandLineTestRunner.cpp">
+			<Option target="CppUTest" />
+			<Option target="RunAllTests" />
+		</Unit>
+		<Unit filename="cpputest\src\CppUTest\CrashReporter.cpp">
 			<Option target="CppUTest" />
 			<Option target="RunAllTests" />
 		</Unit>
