@@ -490,7 +490,6 @@
 			<Option target="CppUTest" />
 		</Unit>
 		<Unit filename="cpputest\src\Platforms\Gcc\UtestPlatform.cpp">
-			<Option compiler="cygwin" use="1" buildCommand="$compiler $includes -c $file -o $object" />
 			<Option target="CppUTest" />
 			<Option target="RunAllTests" />
 		</Unit>
