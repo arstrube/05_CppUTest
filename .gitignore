@@ -4,3 +4,4 @@
 *.depend
 *.layout
 *.stackdump
+.DS_Store

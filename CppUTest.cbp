@@ -7,14 +7,14 @@
 		<Option compiler="cygwin" />
 		<Build>
 			<Target title="CppUTest">
-				<Option output="cpputest\lib\lib$(TARGET_NAME)" prefix_auto="1" extension_auto="1" />
+				<Option output="E:\CppuTest\lib\lib$(TARGET_NAME)" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="" />
 				<Option object_output="out\" />
 				<Option type="2" />
 				<Option compiler="cygwin" />
 			</Target>
 			<Target title="CppUTestExt">
-				<Option output="cpputest\lib\lib$(TARGET_NAME)" prefix_auto="1" extension_auto="1" />
+				<Option output="E:\CppUTest\lib\lib$(TARGET_NAME)" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="" />
 				<Option object_output="out\" />
 				<Option type="2" />
