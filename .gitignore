@@ -5,3 +5,4 @@
 *.layout
 *.stackdump
 .DS_Store
+*.cbTemp
