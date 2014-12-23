@@ -1,4 +1,6 @@
 */
+*.app
+*.a
 *.eap
 *.exe
 *.depend
