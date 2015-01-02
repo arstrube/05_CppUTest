@@ -99,9 +99,6 @@
 		<Unit filename="cpputest/examples/AllTests/EventDispatcherTest.cpp">
 			<Option target="AllTests" />
 		</Unit>
-		<Unit filename="cpputest/examples/AllTests/HelloStub.c">
-			<Option compilerVar="CC" />
-		</Unit>
 		<Unit filename="cpputest/examples/AllTests/HelloTest.cpp">
 			<Option target="AllTests" />
 		</Unit>
@@ -599,6 +596,9 @@
 			<Option target="RunAllTests" />
 		</Unit>
 		<Unit filename="cpputest/tests/MemoryLeakWarningTest.cpp">
+			<Option target="RunAllTests" />
+		</Unit>
+		<Unit filename="cpputest/tests/Platforms/Gcc/UTestPlatformTests.cpp">
 			<Option target="RunAllTests" />
 		</Unit>
 		<Unit filename="cpputest/tests/PluginTest.cpp">
