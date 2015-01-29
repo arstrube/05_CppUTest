@@ -7,14 +7,14 @@
 		<Option compiler="cygwin" />
 		<Build>
 			<Target title="CppUTest">
-				<Option output="E:/CppuTest/lib/$(TARGET_NAME)" prefix_auto="1" extension_auto="1" />
+				<Option output="cppuTest/lib/$(TARGET_NAME)" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="" />
 				<Option object_output="out/" />
 				<Option type="2" />
 				<Option compiler="cygwin" />
 			</Target>
 			<Target title="CppUTestExt">
-				<Option output="E:/CppUTest/lib/$(TARGET_NAME)" prefix_auto="1" extension_auto="1" />
+				<Option output="cppUTest/lib/$(TARGET_NAME)" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="" />
 				<Option object_output="out/" />
 				<Option type="2" />
@@ -72,7 +72,7 @@
 				</Linker>
 			</Target>
 			<Target title="CppUTest-gcov">
-				<Option output="E:/CppuTest/lib/$(TARGET_NAME)" prefix_auto="1" extension_auto="1" />
+				<Option output="cppuTest/lib/$(TARGET_NAME)" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="" />
 				<Option object_output="out/" />
 				<Option type="2" />
@@ -83,7 +83,7 @@
 				</Compiler>
 			</Target>
 			<Target title="CppUTestExt-gcov">
-				<Option output="E:/CppUTest/lib/$(TARGET_NAME)" prefix_auto="1" extension_auto="1" />
+				<Option output="cppUTest/lib/$(TARGET_NAME)" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="" />
 				<Option object_output="out/" />
 				<Option type="2" />
