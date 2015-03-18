@@ -598,9 +598,6 @@
 		<Unit filename="cpputest/tests/MemoryLeakWarningTest.cpp">
 			<Option target="RunAllTests" />
 		</Unit>
-		<Unit filename="cpputest/tests/Platforms/Gcc/UTestPlatformTests.cpp">
-			<Option target="RunAllTests" />
-		</Unit>
 		<Unit filename="cpputest/tests/PluginTest.cpp">
 			<Option target="RunAllTests" />
 		</Unit>
@@ -645,6 +642,9 @@
 			<Option target="RunAllTests" />
 		</Unit>
 		<Unit filename="cpputest/tests/TestUTestMacro.cpp">
+			<Option target="RunAllTests" />
+		</Unit>
+		<Unit filename="cpputest/tests/UtestPlatformTest.cpp">
 			<Option target="RunAllTests" />
 		</Unit>
 		<Unit filename="cpputest/tests/UtestTest.cpp">
