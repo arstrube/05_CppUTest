@@ -408,6 +408,7 @@
 		<Unit filename="cpputest/src/Platforms/Gcc/UtestPlatform.cpp">
 			<Option target="CppUTest" />
 			<Option target="CppUTest-gcov" />
+			<Option target="RunAllTests" />
 		</Unit>
 		<Unit filename="cpputest/src/Platforms/Iar/UtestPlatform.cpp">
 			<Option compile="0" />
@@ -449,10 +450,7 @@
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
 		</Unit>
-		<Unit filename="cpputest/tests/AllocLetTestFree.h">
-			<Option target="RunAllTests" />
-			<Option target="RunAllTests-gcov" />
-		</Unit>
+		<Unit filename="cpputest/tests/AllocLetTestFree.h" />
 		<Unit filename="cpputest/tests/AllocLetTestFreeTest.cpp">
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
@@ -462,18 +460,12 @@
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
 		</Unit>
-		<Unit filename="cpputest/tests/AllocationInCFile.h">
-			<Option target="RunAllTests" />
-			<Option target="RunAllTests-gcov" />
-		</Unit>
+		<Unit filename="cpputest/tests/AllocationInCFile.h" />
 		<Unit filename="cpputest/tests/AllocationInCppFile.cpp">
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
 		</Unit>
-		<Unit filename="cpputest/tests/AllocationInCppFile.h">
-			<Option target="RunAllTests" />
-			<Option target="RunAllTests-gcov" />
-		</Unit>
+		<Unit filename="cpputest/tests/AllocationInCppFile.h" />
 		<Unit filename="cpputest/tests/CheatSheetTest.cpp">
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
@@ -538,10 +530,7 @@
 			<Option target="RunAllTestsExt" />
 			<Option target="RunAllTestsExt-gcov" />
 		</Unit>
-		<Unit filename="cpputest/tests/CppUTestExt/MockFailureTest.h">
-			<Option target="RunAllTestsExt" />
-			<Option target="RunAllTestsExt-gcov" />
-		</Unit>
+		<Unit filename="cpputest/tests/CppUTestExt/MockFailureTest.h" />
 		<Unit filename="cpputest/tests/CppUTestExt/MockPluginTest.cpp">
 			<Option target="RunAllTestsExt" />
 			<Option target="RunAllTestsExt-gcov" />
