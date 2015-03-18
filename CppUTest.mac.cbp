@@ -25,7 +25,7 @@
 				<Option object_output="out" />
 				<Option type="1" />
 				<Option compiler="gcc" />
-				<Option parameters="-v" />
+				<Option parameters="-v ; exit" />
 			</Target>
 			<Target title="RunAllTestsExt">
 				<Option output="$(TARGET_NAME).app" prefix_auto="1" extension_auto="0" />
@@ -150,10 +150,7 @@
 			<Option target="CppUTest" />
 			<Option target="RunAllTestsExt" />
 		</Unit>
-		<Unit filename="cpputest/include/CppUTest/CppUTestConfig.h">
-			<Option target="CppUTest" />
-			<Option target="RunAllTestsExt" />
-		</Unit>
+		<Unit filename="cpputest/include/CppUTest/CppUTestConfig.h" />
 		<Unit filename="cpputest/include/CppUTest/JUnitTestOutput.h">
 			<Option target="CppUTest" />
 			<Option target="RunAllTestsExt" />
@@ -308,6 +305,9 @@
 		<Unit filename="cpputest/include/CppUTestExt/OrderedTest.h">
 			<Option target="CppUTestExt" />
 			<Option target="RunAllTestsExt" />
+		</Unit>
+		<Unit filename="cpputest/include/CppUTestExt/TestInSeparateProcess.h">
+			<Option target="CppUTestExt" />
 		</Unit>
 		<Unit filename="cpputest/include/Platforms/Gcc/Platform.h">
 			<Option target="CppUTest" />
