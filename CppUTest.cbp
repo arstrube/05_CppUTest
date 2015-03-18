@@ -137,6 +137,8 @@
 			<Add option="-Wconversion" />
 			<Add option='-include &quot;CppuTest/MemoryLeakDetectorMallocMacros.h&quot;' />
 			<Add option='-include &quot;CppuTest/MemoryLeakDetectorNewMacros.h&quot;' />
+			<Add option="-DCPPUTEST_USE_STD_CPP_LIB" />
+			<Add option="-DCPPUTEST_USE_MEM_LEAK_DETECTION" />
 			<Add directory="cpputest/include" />
 			<Add directory="cpputest" />
 		</Compiler>
@@ -195,339 +197,54 @@
 		<Unit filename="cpputest/examples/ApplicationLib/hello.h">
 			<Option target="ApplicationLib" />
 		</Unit>
-		<Unit filename="cpputest/include/CppUTestExt/CodeMemoryReportFormatter.h">
-			<Option target="CppUTestExt" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTestExt-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
-		<Unit filename="cpputest/include/CppUTestExt/GMock.h">
-			<Option target="CppUTestExt" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTestExt-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
-		<Unit filename="cpputest/include/CppUTestExt/GTestConvertor.h">
-			<Option target="CppUTestExt" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTestExt-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
-		<Unit filename="cpputest/include/CppUTestExt/MemoryReportAllocator.h">
-			<Option target="CppUTestExt" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTestExt-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
-		<Unit filename="cpputest/include/CppUTestExt/MemoryReportFormatter.h">
-			<Option target="CppUTestExt" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTestExt-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
-		<Unit filename="cpputest/include/CppUTestExt/MemoryReporterPlugin.h">
-			<Option target="CppUTestExt" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTestExt-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
-		<Unit filename="cpputest/include/CppUTestExt/MockActualCall.h">
-			<Option target="CppUTestExt" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTestExt-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
-		<Unit filename="cpputest/include/CppUTestExt/MockCheckedActualCall.h">
-			<Option target="CppUTestExt" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTestExt-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
-		<Unit filename="cpputest/include/CppUTestExt/MockCheckedExpectedCall.h">
-			<Option target="CppUTestExt" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTestExt-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
-		<Unit filename="cpputest/include/CppUTestExt/MockExpectedCall.h">
-			<Option target="CppUTestExt" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTestExt-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
-		<Unit filename="cpputest/include/CppUTestExt/MockExpectedCallsList.h">
-			<Option target="CppUTestExt" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTestExt-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
-		<Unit filename="cpputest/include/CppUTestExt/MockFailure.h">
-			<Option target="CppUTestExt" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTestExt-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
-		<Unit filename="cpputest/include/CppUTestExt/MockNamedValue.h">
-			<Option target="CppUTestExt" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTestExt-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
-		<Unit filename="cpputest/include/CppUTestExt/MockSupport.h">
-			<Option target="CppUTestExt" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTestExt-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
-		<Unit filename="cpputest/include/CppUTestExt/MockSupportPlugin.h">
-			<Option target="CppUTestExt" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTestExt-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
-		<Unit filename="cpputest/include/CppUTestExt/MockSupport_c.h">
-			<Option target="CppUTestExt" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTestExt-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
-		<Unit filename="cpputest/include/CppUTestExt/OrderedTest.h">
-			<Option target="CppUTestExt" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTestExt-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
-		<Unit filename="cpputest/include/CppUTest/CommandLineArguments.h">
-			<Option target="CppUTest" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTest-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
-		<Unit filename="cpputest/include/CppUTest/CommandLineTestRunner.h">
-			<Option target="CppUTest" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTest-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
-		<Unit filename="cpputest/include/CppUTest/CppUTestConfig.h">
-			<Option target="CppUTest" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTest-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
-		<Unit filename="cpputest/include/CppUTest/JUnitTestOutput.h">
-			<Option target="CppUTest" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTest-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
-		<Unit filename="cpputest/include/CppUTest/MemoryLeakDetector.h">
-			<Option target="CppUTest" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTest-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
-		<Unit filename="cpputest/include/CppUTest/MemoryLeakDetectorMallocMacros.h">
-			<Option target="CppUTest" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTest-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
-		<Unit filename="cpputest/include/CppUTest/MemoryLeakDetectorNewMacros.h">
-			<Option target="CppUTest" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTest-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
-		<Unit filename="cpputest/include/CppUTest/MemoryLeakWarningPlugin.h">
-			<Option target="CppUTest" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTest-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
-		<Unit filename="cpputest/include/CppUTest/PlatformSpecificFunctions.h">
-			<Option target="CppUTest" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTest-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
-		<Unit filename="cpputest/include/CppUTest/PlatformSpecificFunctions_c.h">
-			<Option target="CppUTest" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTest-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
-		<Unit filename="cpputest/include/CppUTest/SimpleMutex.h">
-			<Option target="CppUTest" />
-			<Option target="CppUTest-gcov" />
-		</Unit>
-		<Unit filename="cpputest/include/CppUTest/SimpleString.h">
-			<Option target="CppUTest" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTest-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
-		<Unit filename="cpputest/include/CppUTest/StandardCLibrary.h">
-			<Option target="CppUTest" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTest-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
-		<Unit filename="cpputest/include/CppUTest/TestFailure.h">
-			<Option target="CppUTest" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTest-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
-		<Unit filename="cpputest/include/CppUTest/TestFilter.h">
-			<Option target="CppUTest" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTest-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
-		<Unit filename="cpputest/include/CppUTest/TestHarness.h">
-			<Option target="CppUTest" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTest-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
-		<Unit filename="cpputest/include/CppUTest/TestHarness_c.h">
-			<Option target="CppUTest" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTest-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
-		<Unit filename="cpputest/include/CppUTest/TestMemoryAllocator.h">
-			<Option target="CppUTest" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTest-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
-		<Unit filename="cpputest/include/CppUTest/TestOutput.h">
-			<Option target="CppUTest" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTest-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
-		<Unit filename="cpputest/include/CppUTest/TestPlugin.h">
-			<Option target="CppUTest" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTest-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
-		<Unit filename="cpputest/include/CppUTest/TestRegistry.h">
-			<Option target="CppUTest" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTest-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
-		<Unit filename="cpputest/include/CppUTest/TestResult.h">
-			<Option target="CppUTest" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTest-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
-		<Unit filename="cpputest/include/CppUTest/TestTestingFixture.h">
-			<Option target="CppUTest" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTest-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
-		<Unit filename="cpputest/include/CppUTest/Utest.h">
-			<Option target="CppUTest" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTest-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
-		<Unit filename="cpputest/include/CppUTest/UtestMacros.h">
-			<Option target="CppUTest" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTest-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
-		<Unit filename="cpputest/include/Platforms/Gcc/Platform.h">
-			<Option target="CppUTest" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTest-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
-		<Unit filename="cpputest/include/Platforms/Symbian/Platform.h">
-			<Option target="CppUTest" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTest-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
-		<Unit filename="cpputest/include/Platforms/VisualCpp/Platform.h">
-			<Option target="CppUTest" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTest-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
-		<Unit filename="cpputest/include/Platforms/VisualCpp/stdint.h">
-			<Option target="CppUTest" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTest-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
-		<Unit filename="cpputest/include/Platforms/c2000/Platform.h">
-			<Option target="CppUTest" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTest-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
-		<Unit filename="cpputest/include/Platforms/c2000/stdint.h">
-			<Option target="CppUTest" />
-			<Option target="RunAllTestsExt" />
-			<Option target="AllTests" />
-			<Option target="CppUTest-gcov" />
-			<Option target="ApplicationLib" />
-		</Unit>
+		<Unit filename="cpputest/include/CppUTestExt/CodeMemoryReportFormatter.h" />
+		<Unit filename="cpputest/include/CppUTestExt/GMock.h" />
+		<Unit filename="cpputest/include/CppUTestExt/GTestConvertor.h" />
+		<Unit filename="cpputest/include/CppUTestExt/MemoryReportAllocator.h" />
+		<Unit filename="cpputest/include/CppUTestExt/MemoryReportFormatter.h" />
+		<Unit filename="cpputest/include/CppUTestExt/MemoryReporterPlugin.h" />
+		<Unit filename="cpputest/include/CppUTestExt/MockActualCall.h" />
+		<Unit filename="cpputest/include/CppUTestExt/MockCheckedActualCall.h" />
+		<Unit filename="cpputest/include/CppUTestExt/MockCheckedExpectedCall.h" />
+		<Unit filename="cpputest/include/CppUTestExt/MockExpectedCall.h" />
+		<Unit filename="cpputest/include/CppUTestExt/MockExpectedCallsList.h" />
+		<Unit filename="cpputest/include/CppUTestExt/MockFailure.h" />
+		<Unit filename="cpputest/include/CppUTestExt/MockNamedValue.h" />
+		<Unit filename="cpputest/include/CppUTestExt/MockSupport.h" />
+		<Unit filename="cpputest/include/CppUTestExt/MockSupportPlugin.h" />
+		<Unit filename="cpputest/include/CppUTestExt/MockSupport_c.h" />
+		<Unit filename="cpputest/include/CppUTestExt/OrderedTest.h" />
+		<Unit filename="cpputest/include/CppUTest/CommandLineArguments.h" />
+		<Unit filename="cpputest/include/CppUTest/CommandLineTestRunner.h" />
+		<Unit filename="cpputest/include/CppUTest/CppUTestConfig.h" />
+		<Unit filename="cpputest/include/CppUTest/JUnitTestOutput.h" />
+		<Unit filename="cpputest/include/CppUTest/MemoryLeakDetector.h" />
+		<Unit filename="cpputest/include/CppUTest/MemoryLeakDetectorMallocMacros.h" />
+		<Unit filename="cpputest/include/CppUTest/MemoryLeakDetectorNewMacros.h" />
+		<Unit filename="cpputest/include/CppUTest/MemoryLeakWarningPlugin.h" />
+		<Unit filename="cpputest/include/CppUTest/PlatformSpecificFunctions.h" />
+		<Unit filename="cpputest/include/CppUTest/PlatformSpecificFunctions_c.h" />
+		<Unit filename="cpputest/include/CppUTest/SimpleMutex.h" />
+		<Unit filename="cpputest/include/CppUTest/SimpleString.h" />
+		<Unit filename="cpputest/include/CppUTest/StandardCLibrary.h" />
+		<Unit filename="cpputest/include/CppUTest/TestFailure.h" />
+		<Unit filename="cpputest/include/CppUTest/TestFilter.h" />
+		<Unit filename="cpputest/include/CppUTest/TestHarness.h" />
+		<Unit filename="cpputest/include/CppUTest/TestHarness_c.h" />
+		<Unit filename="cpputest/include/CppUTest/TestMemoryAllocator.h" />
+		<Unit filename="cpputest/include/CppUTest/TestOutput.h" />
+		<Unit filename="cpputest/include/CppUTest/TestPlugin.h" />
+		<Unit filename="cpputest/include/CppUTest/TestRegistry.h" />
+		<Unit filename="cpputest/include/CppUTest/TestResult.h" />
+		<Unit filename="cpputest/include/CppUTest/TestTestingFixture.h" />
+		<Unit filename="cpputest/include/CppUTest/Utest.h" />
+		<Unit filename="cpputest/include/CppUTest/UtestMacros.h" />
+		<Unit filename="cpputest/include/Platforms/Gcc/Platform.h" />
+		<Unit filename="cpputest/include/Platforms/Symbian/Platform.h" />
+		<Unit filename="cpputest/include/Platforms/VisualCpp/Platform.h" />
+		<Unit filename="cpputest/include/Platforms/VisualCpp/stdint.h" />
+		<Unit filename="cpputest/include/Platforms/c2000/Platform.h" />
+		<Unit filename="cpputest/include/Platforms/c2000/stdint.h" />
 		<Unit filename="cpputest/src/CppUTestExt/CodeMemoryReportFormatter.cpp">
 			<Option target="CppUTestExt" />
 			<Option target="RunAllTestsExt" />
@@ -726,10 +443,7 @@
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
 		</Unit>
-		<Unit filename="cpputest/tests/AllTests.h">
-			<Option target="RunAllTests" />
-			<Option target="RunAllTests-gcov" />
-		</Unit>
+		<Unit filename="cpputest/tests/AllTests.h" />
 		<Unit filename="cpputest/tests/AllocLetTestFree.c">
 			<Option compilerVar="CC" />
 			<Option target="RunAllTests" />
@@ -869,10 +583,6 @@
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
 		</Unit>
-		<Unit filename="cpputest/tests/Platforms/Gcc/UtestPlatformTest.cpp">
-			<Option target="RunAllTests" />
-			<Option target="RunAllTests-gcov" />
-		</Unit>
 		<Unit filename="cpputest/tests/PluginTest.cpp">
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
@@ -884,6 +594,11 @@
 		<Unit filename="cpputest/tests/SetPluginTest.cpp">
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
+			<Option target="RunAllTestsExt" />
+		</Unit>
+		<Unit filename="cpputest/tests/SimpleMutexTest.cpp">
+			<Option target="RunAllTests" />
+			<Option target="RunAllTestsExt" />
 		</Unit>
 		<Unit filename="cpputest/tests/SimpleStringTest.cpp">
 			<Option target="RunAllTests" />
@@ -892,6 +607,7 @@
 		<Unit filename="cpputest/tests/TestFailureNaNTest.cpp">
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
+			<Option target="RunAllTestsExt" />
 		</Unit>
 		<Unit filename="cpputest/tests/TestFailureTest.cpp">
 			<Option target="RunAllTests" />
@@ -931,6 +647,10 @@
 			<Option target="RunAllTests-gcov" />
 		</Unit>
 		<Unit filename="cpputest/tests/TestUTestMacro.cpp">
+			<Option target="RunAllTests" />
+			<Option target="RunAllTests-gcov" />
+		</Unit>
+		<Unit filename="cpputest/tests/UtestPlatformTest.cpp">
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
 		</Unit>
