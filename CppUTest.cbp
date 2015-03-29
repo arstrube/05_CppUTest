@@ -156,6 +156,22 @@
 					<Add option="-g" />
 				</Compiler>
 			</Target>
+			<Target title="XRunAllTestsExt">
+				<Option output="$(TARGET_NAME).exe" prefix_auto="1" extension_auto="0" />
+				<Option object_output="out" />
+				<Option type="1" />
+				<Option compiler="cygwin" />
+				<Option parameters="-v" />
+				<Option projectCompilerOptionsRelation="1" />
+				<Option projectLinkerOptionsRelation="1" />
+				<Compiler>
+					<Add option="-O2 -ffreestanding" />
+				</Compiler>
+				<Linker>
+					<Add library="CppUTest" />
+					<Add directory="cpputest/lib" />
+				</Linker>
+			</Target>
 		</Build>
 		<VirtualTargets>
 			<Add alias="All" targets="CppUTest;CppUTestExt;RunAllTests;AllTests;RunAllTestsExt;" />
@@ -283,24 +299,28 @@
 			<Option target="RunAllTestsExt" />
 			<Option target="CppUTestExt-gcov" />
 			<Option target="XCppUTestExt" />
+			<Option target="XRunAllTestsExt" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTestExt/MemoryReportAllocator.cpp">
 			<Option target="CppUTestExt" />
 			<Option target="RunAllTestsExt" />
 			<Option target="CppUTestExt-gcov" />
 			<Option target="XCppUTestExt" />
+			<Option target="XRunAllTestsExt" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTestExt/MemoryReportFormatter.cpp">
 			<Option target="CppUTestExt" />
 			<Option target="RunAllTestsExt" />
 			<Option target="CppUTestExt-gcov" />
 			<Option target="XCppUTestExt" />
+			<Option target="XRunAllTestsExt" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTestExt/MemoryReporterPlugin.cpp">
 			<Option target="CppUTestExt" />
 			<Option target="RunAllTestsExt" />
 			<Option target="CppUTestExt-gcov" />
 			<Option target="XCppUTestExt" />
+			<Option target="XRunAllTestsExt" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTestExt/MockActualCall.cpp">
 			<Option target="CppUTestExt" />
@@ -309,6 +329,7 @@
 			<Option target="CppUTestExt-gcov" />
 			<Option target="ApplicationLib" />
 			<Option target="XCppUTestExt" />
+			<Option target="XRunAllTestsExt" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTestExt/MockExpectedCall.cpp">
 			<Option target="CppUTestExt" />
@@ -317,48 +338,56 @@
 			<Option target="CppUTestExt-gcov" />
 			<Option target="ApplicationLib" />
 			<Option target="XCppUTestExt" />
+			<Option target="XRunAllTestsExt" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTestExt/MockExpectedCallsList.cpp">
 			<Option target="CppUTestExt" />
 			<Option target="RunAllTestsExt" />
 			<Option target="CppUTestExt-gcov" />
 			<Option target="XCppUTestExt" />
+			<Option target="XRunAllTestsExt" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTestExt/MockFailure.cpp">
 			<Option target="CppUTestExt" />
 			<Option target="RunAllTestsExt" />
 			<Option target="CppUTestExt-gcov" />
 			<Option target="XCppUTestExt" />
+			<Option target="XRunAllTestsExt" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTestExt/MockNamedValue.cpp">
 			<Option target="CppUTestExt" />
 			<Option target="RunAllTestsExt" />
 			<Option target="CppUTestExt-gcov" />
 			<Option target="XCppUTestExt" />
+			<Option target="XRunAllTestsExt" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTestExt/MockSupport.cpp">
 			<Option target="CppUTestExt" />
 			<Option target="RunAllTestsExt" />
 			<Option target="CppUTestExt-gcov" />
 			<Option target="XCppUTestExt" />
+			<Option target="XRunAllTestsExt" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTestExt/MockSupportPlugin.cpp">
 			<Option target="CppUTestExt" />
 			<Option target="RunAllTestsExt" />
 			<Option target="CppUTestExt-gcov" />
 			<Option target="XCppUTestExt" />
+			<Option target="XRunAllTestsExt" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTestExt/MockSupport_c.cpp">
 			<Option target="CppUTestExt" />
 			<Option target="RunAllTestsExt" />
 			<Option target="CppUTestExt-gcov" />
 			<Option target="XCppUTestExt" />
+			<Option target="XRunAllTestsExt" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTestExt/OrderedTest.cpp">
 			<Option target="CppUTestExt" />
 			<Option target="RunAllTestsExt" />
 			<Option target="CppUTestExt-gcov" />
 			<Option target="XCppUTestExt" />
+			<Option target="XRunAllTestsExt" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTest/CommandLineArguments.cpp">
 			<Option target="CppUTest" />
@@ -576,80 +605,99 @@
 		<Unit filename="cpputest/tests/CppUTestExt/AllTests.cpp">
 			<Option target="RunAllTestsExt" />
 			<Option target="RunAllTestsExt-gcov" />
+			<Option target="XRunAllTestsExt" />
 		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/CodeMemoryReportFormatterTest.cpp">
 			<Option target="RunAllTestsExt" />
 			<Option target="RunAllTestsExt-gcov" />
+			<Option target="XRunAllTestsExt" />
 		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/GMockTest.cpp">
 			<Option target="RunAllTestsExt" />
 			<Option target="RunAllTestsExt-gcov" />
+			<Option target="XRunAllTestsExt" />
 		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/GTest1Test.cpp">
 			<Option target="RunAllTestsExt" />
 			<Option target="RunAllTestsExt-gcov" />
+			<Option target="XRunAllTestsExt" />
 		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/GTest2ConvertorTest.cpp">
 			<Option target="RunAllTestsExt" />
 			<Option target="RunAllTestsExt-gcov" />
+			<Option target="XRunAllTestsExt" />
 		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/MemoryReportAllocatorTest.cpp">
 			<Option target="RunAllTestsExt" />
 			<Option target="RunAllTestsExt-gcov" />
+			<Option target="XRunAllTestsExt" />
 		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/MemoryReportFormatterTest.cpp">
 			<Option target="RunAllTestsExt" />
 			<Option target="RunAllTestsExt-gcov" />
+			<Option target="XRunAllTestsExt" />
 		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/MemoryReporterPluginTest.cpp">
 			<Option target="RunAllTestsExt" />
 			<Option target="RunAllTestsExt-gcov" />
+			<Option target="XRunAllTestsExt" />
 		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/MockActualCallTest.cpp">
 			<Option target="RunAllTestsExt" />
 			<Option target="RunAllTestsExt-gcov" />
+			<Option target="XRunAllTestsExt" />
 		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/MockCheatSheetTest.cpp">
 			<Option target="RunAllTestsExt" />
 			<Option target="RunAllTestsExt-gcov" />
+			<Option target="XRunAllTestsExt" />
 		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/MockExpectedCallTest.cpp">
 			<Option target="RunAllTestsExt" />
 			<Option target="RunAllTestsExt-gcov" />
+			<Option target="XRunAllTestsExt" />
 		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/MockExpectedFunctionsListTest.cpp">
 			<Option target="RunAllTestsExt" />
 			<Option target="RunAllTestsExt-gcov" />
+			<Option target="XRunAllTestsExt" />
 		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/MockFailureTest.cpp">
 			<Option target="RunAllTestsExt" />
 			<Option target="RunAllTestsExt-gcov" />
+			<Option target="XRunAllTestsExt" />
 		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/MockFailureTest.h" />
 		<Unit filename="cpputest/tests/CppUTestExt/MockPluginTest.cpp">
 			<Option target="RunAllTestsExt" />
 			<Option target="RunAllTestsExt-gcov" />
+			<Option target="XRunAllTestsExt" />
 		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/MockSupportTest.cpp">
 			<Option target="RunAllTestsExt" />
 			<Option target="RunAllTestsExt-gcov" />
+			<Option target="XRunAllTestsExt" />
 		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/MockSupport_cTest.cpp">
 			<Option target="RunAllTestsExt" />
 			<Option target="RunAllTestsExt-gcov" />
+			<Option target="XRunAllTestsExt" />
 		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/MockSupport_cTestCFile.c">
 			<Option compilerVar="CC" />
 			<Option target="RunAllTestsExt" />
 			<Option target="RunAllTestsExt-gcov" />
+			<Option target="XRunAllTestsExt" />
 		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/MockSupport_cTestCFile.h">
 			<Option target="RunAllTestsExt" />
 			<Option target="RunAllTestsExt-gcov" />
+			<Option target="XRunAllTestsExt" />
 		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/OrderedTestTest.cpp">
 			<Option target="RunAllTestsExt" />
 			<Option target="RunAllTestsExt-gcov" />
+			<Option target="XRunAllTestsExt" />
 		</Unit>
 		<Unit filename="cpputest/tests/JUnitOutputTest.cpp">
 			<Option target="RunAllTests" />
@@ -686,11 +734,13 @@
 			<Option target="RunAllTests-gcov" />
 			<Option target="RunAllTestsExt" />
 			<Option target="XRunAllTests" />
+			<Option target="XRunAllTestsExt" />
 		</Unit>
 		<Unit filename="cpputest/tests/SimpleMutexTest.cpp">
 			<Option target="RunAllTests" />
 			<Option target="RunAllTestsExt" />
 			<Option target="XRunAllTests" />
+			<Option target="XRunAllTestsExt" />
 		</Unit>
 		<Unit filename="cpputest/tests/SimpleStringTest.cpp">
 			<Option target="RunAllTests" />
@@ -702,6 +752,7 @@
 			<Option target="RunAllTests-gcov" />
 			<Option target="RunAllTestsExt" />
 			<Option target="XRunAllTests" />
+			<Option target="XRunAllTestsExt" />
 		</Unit>
 		<Unit filename="cpputest/tests/TestFailureTest.cpp">
 			<Option target="RunAllTests" />
