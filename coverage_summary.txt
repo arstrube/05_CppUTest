@@ -1,0 +1,87 @@
+100.00%   ../tests/TestResultTest.cpp
+100.00%   ../tests/TestOutputTest.cpp
+100.00%   ../tests/TestInstallerTest.cpp
+100.00%   ../tests/TestFilterTest.cpp
+100.00%   ../tests/TestFailureTest.cpp
+100.00%   ../tests/SimpleMutexTest.cpp
+100.00%   ../tests/PluginTest.cpp
+100.00%   ../tests/CppUTestExt/MockFailureTest.cpp
+100.00%   ../tests/CppUTestExt/MockExpectedFunctionsListTest.cpp
+100.00%   ../tests/CppUTestExt/MockExpectedCallTest.cpp
+100.00%   ../tests/CppUTestExt/MockCheatSheetTest.cpp
+100.00%   ../tests/CppUTestExt/MockActualCallTest.cpp
+100.00%   ../tests/CppUTestExt/MemoryReportFormatterTest.cpp
+100.00%   ../tests/CppUTestExt/MemoryReportAllocatorTest.cpp
+100.00%   ../tests/CppUTestExt/CodeMemoryReportFormatterTest.cpp
+100.00%   ../tests/CppUTestExt/AllTests.cpp
+100.00%   ../tests/CommandLineTestRunnerTest.cpp
+100.00%   ../tests/CommandLineArgumentsTest.cpp
+100.00%   ../tests/AllTests.cpp
+100.00%   ../tests/AllocLetTestFreeTest.cpp
+100.00%   ../tests/AllocLetTestFree.c
+100.00%   ../src/CppUTestExt/OrderedTest.cpp
+100.00%   ../src/CppUTestExt/MockSupportPlugin.cpp
+100.00%   ../src/CppUTestExt/MemoryReportFormatter.cpp
+100.00%   ../src/CppUTestExt/CodeMemoryReportFormatter.cpp
+100.00%   ../src/CppUTest/TestResult.cpp
+100.00%   ../src/CppUTest/TestRegistry.cpp
+100.00%   ../src/CppUTest/TestPlugin.cpp
+100.00%   ../src/CppUTest/TestOutput.cpp
+100.00%   ../src/CppUTest/TestMemoryAllocator.cpp
+100.00%   ../src/CppUTest/TestFilter.cpp
+100.00%   ../src/CppUTest/TestFailure.cpp
+100.00%   ../src/CppUTest/SimpleString.cpp
+100.00%   ../src/CppUTest/SimpleMutex.cpp
+100.00%   ../src/CppUTest/MemoryLeakDetector.cpp
+100.00%   ../src/CppUTest/CommandLineTestRunner.cpp
+100.00%   ../src/CppUTest/CommandLineArguments.cpp
+100.00%   ../include/CppUTestExt/MockExpectedCallsList.h
+100.00%   ../include/CppUTestExt/MockCheckedExpectedCall.h
+100.00%   ../include/CppUTestExt/MockCheckedActualCall.h
+100.00%   ../include/CppUTestExt/MockActualCall.h
+100.00%   ../include/CppUTest/TestResult.h
+100.00%   ../include/CppUTest/TestMemoryAllocator.h
+100.00%   ../include/CppUTest/TestFilter.h
+100.00%   ../include/CppUTest/TestFailure.h
+100.00%   ../include/CppUTest/MemoryLeakDetector.h
+ 99.70%   ../tests/JUnitOutputTest.cpp
+ 99.63%   ../src/CppUTest/MemoryLeakWarningPlugin.cpp
+ 99.10%   ../src/CppUTestExt/MockExpectedCallsList.cpp
+ 98.98%   ../tests/TestRegistryTest.cpp
+ 98.92%   ../tests/CppUTestExt/MockSupportTest.cpp
+ 98.75%   ../tests/CppUTestExt/MemoryReporterPluginTest.cpp
+ 98.60%   ../tests/SimpleStringTest.cpp
+ 98.58%   ../src/CppUTestExt/MockSupport.cpp
+ 98.51%   ../tests/TestMemoryAllocatorTest.cpp
+ 98.50%   ../tests/MemoryLeakOperatorOverloadsTest.cpp
+ 98.17%   ../tests/MemoryLeakDetectorTest.cpp
+ 98.05%   ../tests/MemoryLeakWarningTest.cpp
+ 97.94%   ../tests/CppUTestExt/OrderedTestTest.cpp
+ 97.87%   ../tests/CppUTestExt/MockSupport_cTest.cpp
+ 97.78%   ../src/CppUTest/Utest.cpp
+ 97.41%   ../src/CppUTestExt/MockNamedValue.cpp
+ 97.10%   ../src/CppUTest/TestHarness_c.cpp
+ 96.88%   ../tests/CppUTestExt/MockPluginTest.cpp
+ 96.03%   ../tests/UtestTest.cpp
+ 95.40%   ../tests/TestHarness_cTest.cpp
+ 93.55%   ../src/CppUTestExt/MemoryReportAllocator.cpp
+ 92.82%   ../src/CppUTestExt/MockSupport_c.cpp
+ 92.31%   ../tests/TestFailureNaNTest.cpp
+ 91.67%   ../tests/CheatSheetTest.cpp
+ 90.00%   ../src/CppUTestExt/MemoryReporterPlugin.cpp
+ 89.77%   ../tests/SetPluginTest.cpp
+ 88.33%   ../src/CppUTestExt/MockFailure.cpp
+ 87.88%   ../include/CppUTest/TestTestingFixture.h
+ 86.62%   ../src/CppUTest/JUnitTestOutput.cpp
+ 82.67%   ../tests/TestUTestMacro.cpp
+ 79.54%   ../src/CppUTestExt/MockExpectedCall.cpp
+ 78.35%   ../src/Platforms/Gcc/UtestPlatform.cpp
+ 78.30%   ../src/CppUTestExt/MockActualCall.cpp
+ 78.00%   ../tests/UtestPlatformTest.cpp
+ 69.23%   ../include/CppUTestExt/MockFailure.h
+ 66.67%   ../include/CppUTestExt/MockExpectedCall.h
+ 66.67%   ../include/CppUTestExt/MemoryReportFormatter.h
+ 66.67%   ../include/CppUTest/Utest.h
+ 58.06%   ../tests/CppUTestExt/MockFailureTest.h
+ 57.14%   ../include/CppUTestExt/MockNamedValue.h
+  0.00%   ../include/CppUTestExt/CodeMemoryReportFormatter.h
