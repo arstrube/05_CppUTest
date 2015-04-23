@@ -1393,11 +1393,6 @@
 			<Option target="RunAllTests-gcov" />
 			<Option target="XRunAllTests" />
 		</Unit>
-		<Unit filename="cpputest/tests/Platforms/Gcc/UtestPlatformWrapper.cpp">
-			<Option target="RunAllTests" />
-			<Option target="RunAllTests-gcov" />
-			<Option target="XCppUTestExt" />
-		</Unit>
 		<Unit filename="cpputest/tests/PluginTest.cpp">
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
@@ -1486,10 +1481,6 @@
 		</Unit>
 		<Unit filename="cpputest/tests/UtestPlatformTest.cpp">
 			<Option target="RunAllTests" />
-			<Option target="RunAllTests-gcov" />
-			<Option target="XRunAllTests" />
-		</Unit>
-		<Unit filename="cpputest/tests/UtestPlatformWrapper.h">
 			<Option target="RunAllTests-gcov" />
 			<Option target="XRunAllTests" />
 		</Unit>
