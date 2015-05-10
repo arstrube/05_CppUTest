@@ -1,4 +1,5 @@
 */
+!xtreme/
 *.app
 *.a
 *.eap
@@ -7,4 +8,4 @@
 *.layout
 *.stackdump
 .DS_Store
-*.cbTemp
+*.cbTemp/Users/arnd/d/dev/05_CppUTest/xtreme/.gitignore

@@ -25,7 +25,7 @@
 				<Option object_output="out" />
 				<Option type="1" />
 				<Option compiler="cygwin" />
-				<Option parameters="-v -ojunit" />
+				<Option parameters="-v" />
 				<Linker>
 					<Add library="CppUTest" />
 				</Linker>
@@ -99,7 +99,7 @@
 				<Option object_output="out" />
 				<Option type="1" />
 				<Option compiler="cygwin" />
-				<Option parameters="-v" />
+				<Option parameters="-v  -gCommandLineTestRunner" />
 				<Compiler>
 					<Add option="--coverage" />
 				</Compiler>
@@ -880,7 +880,6 @@
 			<Option target="XCppUTestExt" />
 			<Option target="XRunAllTestsExt" />
 		</Unit>
-		<Unit filename="cpputest/include/CppUTest/UtestPlatformWrapper.h" />
 		<Unit filename="cpputest/include/Platforms/Gcc/Platform.h">
 			<Option target="CppUTest" />
 			<Option target="CppUTestExt" />
@@ -1485,6 +1484,11 @@
 			<Option target="XRunAllTests" />
 		</Unit>
 		<Unit filename="cpputest/tests/UtestTest.cpp">
+			<Option target="RunAllTests" />
+			<Option target="RunAllTests-gcov" />
+			<Option target="XRunAllTests" />
+		</Unit>
+		<Unit filename="xtreme/XtremeTests.cpp">
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
 			<Option target="XRunAllTests" />
