@@ -1488,6 +1488,17 @@
 			<Option target="RunAllTests-gcov" />
 			<Option target="XRunAllTests" />
 		</Unit>
+		<Unit filename="xtreme/UtestPlatformWrapper.cpp">
+			<Option target="RunAllTests" />
+			<Option target="RunAllTests-gcov" />
+			<Option target="XRunAllTests" />
+			<Option target="XRunAllTestsExt" />
+		</Unit>
+		<Unit filename="xtreme/UtestPlatformWrapper.h">
+			<Option target="RunAllTests" />
+			<Option target="RunAllTests-gcov" />
+			<Option target="XRunAllTests" />
+		</Unit>
 		<Unit filename="xtreme/XtremeTests.cpp">
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
