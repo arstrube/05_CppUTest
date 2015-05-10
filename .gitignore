@@ -7,5 +7,6 @@
 *.depend
 *.layout
 *.stackdump
+*.xml
 .DS_Store
-*.cbTemp/Users/arnd/d/dev/05_CppUTest/xtreme/.gitignore
+*.cbTemp
