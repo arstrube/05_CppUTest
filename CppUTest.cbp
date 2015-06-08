@@ -25,7 +25,7 @@
 				<Option object_output="out" />
 				<Option type="1" />
 				<Option compiler="cygwin" />
-				<Option parameters="-v" />
+				<Option parameters="-v -gImpl" />
 				<Linker>
 					<Add library="CppUTest" />
 				</Linker>
@@ -1388,6 +1388,21 @@
 			<Option target="XRunAllTests" />
 		</Unit>
 		<Unit filename="cpputest/tests/MemoryLeakWarningTest.cpp">
+			<Option target="RunAllTests" />
+			<Option target="RunAllTests-gcov" />
+			<Option target="XRunAllTests" />
+		</Unit>
+		<Unit filename="cpputest/tests/MixInApplyTest.cpp">
+			<Option target="RunAllTests" />
+			<Option target="RunAllTests-gcov" />
+			<Option target="XRunAllTests" />
+		</Unit>
+		<Unit filename="cpputest/tests/MixInTest.cpp">
+			<Option target="RunAllTests" />
+			<Option target="RunAllTests-gcov" />
+			<Option target="XRunAllTests" />
+		</Unit>
+		<Unit filename="cpputest/tests/MixInTest.h">
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
 			<Option target="XRunAllTests" />
