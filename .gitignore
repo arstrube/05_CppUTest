@@ -1,4 +1,5 @@
 */
+!xtreme/
 *.app
 *.a
 *.eap
@@ -6,5 +7,6 @@
 *.depend
 *.layout
 *.stackdump
+*.xml
 .DS_Store
 *.cbTemp
