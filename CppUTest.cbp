@@ -1182,7 +1182,6 @@
 			<Option target="XCppUTest" />
 		</Unit>
 		<Unit filename="cpputest/src/Platforms/Iar/UtestPlatform.cpp">
-			<Option compile="0" />
 			<Option link="0" />
 			<Option target="CppUTest" />
 			<Option target="CppUTest-gcov" />
@@ -1340,6 +1339,11 @@
 			<Option target="XRunAllTests" />
 			<Option target="XCppUTest" />
 			<Option target="XCppUTestExt" />
+			<Option target="XRunAllTestsExt" />
+		</Unit>
+		<Unit filename="cpputest/tests/CppUTestExt/MockNamedValueTest.cpp">
+			<Option target="RunAllTestsExt" />
+			<Option target="RunAllTestsExt-gcov" />
 			<Option target="XRunAllTestsExt" />
 		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/MockPluginTest.cpp">
