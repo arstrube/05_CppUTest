@@ -189,6 +189,7 @@
 					<Add option="-xs" />
 					<Add option="-od" />
 					<Add option="-oc" />
+					<Add option="-d0" />
 					<Add option="-w=3" />
 					<Add option="-mh" />
 					<Add option="-bcl=dos" />
