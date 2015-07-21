@@ -1298,7 +1298,6 @@
 			<Option target="RunAllTestsExt" />
 			<Option target="RunAllTestsExt-gcov" />
 			<Option target="XRunAllTestsExt" />
-			<Option target="DosRunAllTests1" />
 		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/CodeMemoryReportFormatterTest.cpp">
 			<Option target="RunAllTestsExt" />
@@ -1525,13 +1524,11 @@
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
 			<Option target="XRunAllTests" />
-			<Option target="DosRunAllTests1" />
 		</Unit>
 		<Unit filename="cpputest/tests/UtestTest.cpp">
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
 			<Option target="XRunAllTests" />
-			<Option target="DosRunAllTests1" />
 		</Unit>
 		<Unit filename="xtreme/UtestPlatformWrapper.cpp">
 			<Option target="XRunAllTests" />
