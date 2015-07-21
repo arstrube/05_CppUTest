@@ -182,6 +182,7 @@
 				<Option compiler="openwatcom_16bit_compiler" />
 				<Option parameters="-v" />
 				<Option projectCompilerOptionsRelation="1" />
+				<Option projectLinkerOptionsRelation="1" />
 				<Option projectIncludeDirsRelation="1" />
 				<Option projectLibDirsRelation="1" />
 				<Compiler>
@@ -197,6 +198,10 @@
 					<Add directory="cpputest/include" />
 					<Add directory="cpputest/include/Platforms/dos" />
 				</Compiler>
+				<Linker>
+					<Add directory="d:/watcom/lib286/dos" />
+					<Add directory="d:/watcom/lib286" />
+				</Linker>
 			</Target>
 		</Build>
 		<VirtualTargets>
