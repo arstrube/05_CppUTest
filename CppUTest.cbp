@@ -175,7 +175,7 @@
 					<Add directory="cpputest/lib" />
 				</Linker>
 			</Target>
-			<Target title="DosRunAllTests1">
+			<Target title="DosMinimal">
 				<Option output="$(TARGET_NAME).exe" prefix_auto="1" extension_auto="0" />
 				<Option object_output="out" />
 				<Option type="1" />
@@ -191,9 +191,8 @@
 					<Add option="-oc" />
 					<Add option="-d0" />
 					<Add option="-w=3" />
-					<Add option="-mh" />
+					<Add option="-ml" />
 					<Add option="-bcl=dos" />
-					<Add option="-l=dos4g" />
 					<Add option="-dCPPUTEST_MEM_LEAK_DETECTION_DISABLED=1" />
 					<Add directory="cpputest" />
 					<Add directory="cpputest/include" />
@@ -1004,6 +1003,7 @@
 			<Option target="CppUTestExt-gcov" />
 			<Option target="XCppUTestExt" />
 			<Option target="XRunAllTestsExt" />
+			<Option target="DosMinimal" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTestExt/MemoryReportAllocator.cpp">
 			<Option target="CppUTestExt" />
@@ -1011,6 +1011,7 @@
 			<Option target="CppUTestExt-gcov" />
 			<Option target="XCppUTestExt" />
 			<Option target="XRunAllTestsExt" />
+			<Option target="DosMinimal" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTestExt/MemoryReportFormatter.cpp">
 			<Option target="CppUTestExt" />
@@ -1018,6 +1019,7 @@
 			<Option target="CppUTestExt-gcov" />
 			<Option target="XCppUTestExt" />
 			<Option target="XRunAllTestsExt" />
+			<Option target="DosMinimal" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTestExt/MemoryReporterPlugin.cpp">
 			<Option target="CppUTestExt" />
@@ -1025,6 +1027,7 @@
 			<Option target="CppUTestExt-gcov" />
 			<Option target="XCppUTestExt" />
 			<Option target="XRunAllTestsExt" />
+			<Option target="DosMinimal" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTestExt/MockActualCall.cpp">
 			<Option target="CppUTestExt" />
@@ -1034,6 +1037,7 @@
 			<Option target="ApplicationLib" />
 			<Option target="XCppUTestExt" />
 			<Option target="XRunAllTestsExt" />
+			<Option target="DosMinimal" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTestExt/MockExpectedCall.cpp">
 			<Option target="CppUTestExt" />
@@ -1043,6 +1047,7 @@
 			<Option target="ApplicationLib" />
 			<Option target="XCppUTestExt" />
 			<Option target="XRunAllTestsExt" />
+			<Option target="DosMinimal" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTestExt/MockExpectedCallsList.cpp">
 			<Option target="CppUTestExt" />
@@ -1050,6 +1055,7 @@
 			<Option target="CppUTestExt-gcov" />
 			<Option target="XCppUTestExt" />
 			<Option target="XRunAllTestsExt" />
+			<Option target="DosMinimal" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTestExt/MockFailure.cpp">
 			<Option target="CppUTestExt" />
@@ -1057,6 +1063,7 @@
 			<Option target="CppUTestExt-gcov" />
 			<Option target="XCppUTestExt" />
 			<Option target="XRunAllTestsExt" />
+			<Option target="DosMinimal" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTestExt/MockNamedValue.cpp">
 			<Option target="CppUTestExt" />
@@ -1064,6 +1071,7 @@
 			<Option target="CppUTestExt-gcov" />
 			<Option target="XCppUTestExt" />
 			<Option target="XRunAllTestsExt" />
+			<Option target="DosMinimal" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTestExt/MockSupport.cpp">
 			<Option target="CppUTestExt" />
@@ -1071,6 +1079,7 @@
 			<Option target="CppUTestExt-gcov" />
 			<Option target="XCppUTestExt" />
 			<Option target="XRunAllTestsExt" />
+			<Option target="DosMinimal" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTestExt/MockSupportPlugin.cpp">
 			<Option target="CppUTestExt" />
@@ -1078,6 +1087,7 @@
 			<Option target="CppUTestExt-gcov" />
 			<Option target="XCppUTestExt" />
 			<Option target="XRunAllTestsExt" />
+			<Option target="DosMinimal" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTestExt/MockSupport_c.cpp">
 			<Option target="CppUTestExt" />
@@ -1085,6 +1095,7 @@
 			<Option target="CppUTestExt-gcov" />
 			<Option target="XCppUTestExt" />
 			<Option target="XRunAllTestsExt" />
+			<Option target="DosMinimal" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTestExt/OrderedTest.cpp">
 			<Option target="CppUTestExt" />
@@ -1092,160 +1103,181 @@
 			<Option target="CppUTestExt-gcov" />
 			<Option target="XCppUTestExt" />
 			<Option target="XRunAllTestsExt" />
+			<Option target="DosMinimal" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTest/CommandLineArguments.cpp">
 			<Option target="CppUTest" />
 			<Option target="CppUTest-gcov" />
 			<Option target="XRunAllTests" />
 			<Option target="XCppUTest" />
-			<Option target="DosRunAllTests1" />
+			<Option target="DosMinimal" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTest/CommandLineTestRunner.cpp">
 			<Option target="CppUTest" />
 			<Option target="CppUTest-gcov" />
 			<Option target="XRunAllTests" />
 			<Option target="XCppUTest" />
-			<Option target="DosRunAllTests1" />
+			<Option target="DosMinimal" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTest/JUnitTestOutput.cpp">
 			<Option target="CppUTest" />
 			<Option target="CppUTest-gcov" />
 			<Option target="XRunAllTests" />
 			<Option target="XCppUTest" />
-			<Option target="DosRunAllTests1" />
+			<Option target="DosMinimal" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTest/MemoryLeakDetector.cpp">
 			<Option target="CppUTest" />
 			<Option target="CppUTest-gcov" />
 			<Option target="XRunAllTests" />
 			<Option target="XCppUTest" />
-			<Option target="DosRunAllTests1" />
+			<Option target="DosMinimal" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTest/MemoryLeakWarningPlugin.cpp">
 			<Option target="CppUTest" />
 			<Option target="CppUTest-gcov" />
 			<Option target="XRunAllTests" />
 			<Option target="XCppUTest" />
-			<Option target="DosRunAllTests1" />
+			<Option target="DosMinimal" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTest/SimpleMutex.cpp">
 			<Option target="CppUTest" />
 			<Option target="CppUTest-gcov" />
 			<Option target="XRunAllTests" />
 			<Option target="XCppUTest" />
-			<Option target="DosRunAllTests1" />
+			<Option target="DosMinimal" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTest/SimpleString.cpp">
+			<Option target="CppUTest" />
 			<Option target="CppUTest-gcov" />
 			<Option target="XRunAllTests" />
 			<Option target="XCppUTest" />
-			<Option target="DosRunAllTests1" />
+			<Option target="DosMinimal" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTest/TestFailure.cpp">
+			<Option target="CppUTest" />
 			<Option target="CppUTest-gcov" />
 			<Option target="XRunAllTests" />
 			<Option target="XCppUTest" />
-			<Option target="DosRunAllTests1" />
+			<Option target="DosMinimal" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTest/TestFilter.cpp">
+			<Option target="CppUTest" />
 			<Option target="CppUTest-gcov" />
 			<Option target="XRunAllTests" />
 			<Option target="XCppUTest" />
-			<Option target="DosRunAllTests1" />
+			<Option target="DosMinimal" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTest/TestHarness_c.cpp">
+			<Option target="CppUTest" />
 			<Option target="CppUTest-gcov" />
 			<Option target="XRunAllTests" />
 			<Option target="XCppUTest" />
-			<Option target="DosRunAllTests1" />
+			<Option target="DosMinimal" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTest/TestMemoryAllocator.cpp">
+			<Option target="CppUTest" />
 			<Option target="CppUTest-gcov" />
 			<Option target="XRunAllTests" />
 			<Option target="XCppUTest" />
-			<Option target="DosRunAllTests1" />
+			<Option target="DosMinimal" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTest/TestOutput.cpp">
+			<Option target="CppUTest" />
 			<Option target="CppUTest-gcov" />
 			<Option target="XRunAllTests" />
 			<Option target="XCppUTest" />
-			<Option target="DosRunAllTests1" />
+			<Option target="DosMinimal" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTest/TestPlugin.cpp">
+			<Option target="CppUTest" />
 			<Option target="CppUTest-gcov" />
 			<Option target="XRunAllTests" />
 			<Option target="XCppUTest" />
-			<Option target="DosRunAllTests1" />
+			<Option target="DosMinimal" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTest/TestRegistry.cpp">
+			<Option target="CppUTest" />
 			<Option target="CppUTest-gcov" />
 			<Option target="XRunAllTests" />
 			<Option target="XCppUTest" />
-			<Option target="DosRunAllTests1" />
+			<Option target="DosMinimal" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTest/TestResult.cpp">
+			<Option target="CppUTest" />
 			<Option target="CppUTest-gcov" />
 			<Option target="XRunAllTests" />
 			<Option target="XCppUTest" />
-			<Option target="DosRunAllTests1" />
+			<Option target="DosMinimal" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTest/Utest.cpp">
+			<Option target="CppUTest" />
 			<Option target="CppUTest-gcov" />
 			<Option target="XRunAllTests" />
 			<Option target="XCppUTest" />
-			<Option target="DosRunAllTests1" />
+			<Option target="DosMinimal" />
 		</Unit>
 		<Unit filename="cpputest/src/Platforms/C2000/UtestPlatform.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+			<Option target="CppUTest" />
 			<Option target="CppUTest-gcov" />
 			<Option target="XCppUTest" />
 		</Unit>
 		<Unit filename="cpputest/src/Platforms/GccNoStdC/UtestPlatform.cpp">
 			<Option link="0" />
+			<Option target="CppUTest" />
 			<Option target="CppUTest-gcov" />
 			<Option target="XCppUTest" />
 		</Unit>
 		<Unit filename="cpputest/src/Platforms/Gcc/UtestPlatform.cpp">
+			<Option target="CppUTest" />
 			<Option target="CppUTest-gcov" />
+			<Option target="XRunAllTests" />
+			<Option target="XCppUTest" />
 		</Unit>
 		<Unit filename="cpputest/src/Platforms/Iar/UtestPlatform.cpp">
 			<Option link="0" />
+			<Option target="CppUTest" />
 			<Option target="CppUTest-gcov" />
 			<Option target="XCppUTest" />
 		</Unit>
 		<Unit filename="cpputest/src/Platforms/Symbian/SymbianMemoryLeakWarning.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+			<Option target="CppUTest" />
 			<Option target="CppUTest-gcov" />
 			<Option target="XCppUTest" />
 		</Unit>
 		<Unit filename="cpputest/src/Platforms/Symbian/UtestPlatform.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+			<Option target="CppUTest" />
 			<Option target="CppUTest-gcov" />
 			<Option target="XCppUTest" />
 		</Unit>
 		<Unit filename="cpputest/src/Platforms/VisualCpp/UtestPlatform.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+			<Option target="CppUTest" />
 			<Option target="CppUTest-gcov" />
 			<Option target="XCppUTest" />
 		</Unit>
 		<Unit filename="cpputest/src/Platforms/armcc/UtestPlatform.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+			<Option target="CppUTest" />
 			<Option target="CppUTest-gcov" />
 			<Option target="XCppUTest" />
 		</Unit>
 		<Unit filename="cpputest/src/Platforms/dos/UtestPlatform.cpp">
-			<Option target="DosRunAllTests1" />
+			<Option target="DosMinimal" />
 		</Unit>
 		<Unit filename="cpputest/tests/AllTests.cpp">
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
 			<Option target="XRunAllTests" />
-			<Option target="DosRunAllTests1" />
+			<Option target="DosMinimal" />
 		</Unit>
 		<Unit filename="cpputest/tests/AllTests.h" />
 		<Unit filename="cpputest/tests/AllocLetTestFree.c">
@@ -1253,47 +1285,40 @@
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
 			<Option target="XRunAllTests" />
-			<Option target="DosRunAllTests1" />
 		</Unit>
 		<Unit filename="cpputest/tests/AllocLetTestFree.h" />
 		<Unit filename="cpputest/tests/AllocLetTestFreeTest.cpp">
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
 			<Option target="XRunAllTests" />
-			<Option target="DosRunAllTests1" />
 		</Unit>
 		<Unit filename="cpputest/tests/AllocationInCFile.c">
 			<Option compilerVar="CC" />
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
 			<Option target="XRunAllTests" />
-			<Option target="DosRunAllTests1" />
 		</Unit>
 		<Unit filename="cpputest/tests/AllocationInCFile.h" />
 		<Unit filename="cpputest/tests/AllocationInCppFile.cpp">
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
 			<Option target="XRunAllTests" />
-			<Option target="DosRunAllTests1" />
 		</Unit>
 		<Unit filename="cpputest/tests/AllocationInCppFile.h" />
 		<Unit filename="cpputest/tests/CheatSheetTest.cpp">
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
 			<Option target="XRunAllTests" />
-			<Option target="DosRunAllTests1" />
 		</Unit>
 		<Unit filename="cpputest/tests/CommandLineArgumentsTest.cpp">
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
 			<Option target="XRunAllTests" />
-			<Option target="DosRunAllTests1" />
 		</Unit>
 		<Unit filename="cpputest/tests/CommandLineTestRunnerTest.cpp">
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
 			<Option target="XRunAllTests" />
-			<Option target="DosRunAllTests1" />
 		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/AllTests.cpp">
 			<Option target="RunAllTestsExt" />
@@ -1361,6 +1386,7 @@
 			<Option target="XRunAllTestsExt" />
 		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/MockFailureTest.h">
+			<Option target="CppUTest" />
 			<Option target="CppUTestExt" />
 			<Option target="RunAllTestsExt" />
 			<Option target="ApplicationLib" />
@@ -1419,7 +1445,6 @@
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
 			<Option target="XRunAllTests" />
-			<Option target="DosRunAllTests1" />
 		</Unit>
 		<Unit filename="cpputest/tests/MemoryLeakOperatorOverloadsTest.cpp">
 			<Option target="RunAllTests" />
@@ -1435,13 +1460,11 @@
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
 			<Option target="XRunAllTests" />
-			<Option target="DosRunAllTests1" />
 		</Unit>
 		<Unit filename="cpputest/tests/PreprocessorTest.cpp">
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
 			<Option target="XRunAllTests" />
-			<Option target="DosRunAllTests1" />
 		</Unit>
 		<Unit filename="cpputest/tests/SetPluginTest.cpp">
 			<Option target="RunAllTests" />
@@ -1449,14 +1472,12 @@
 			<Option target="RunAllTestsExt" />
 			<Option target="XRunAllTests" />
 			<Option target="XRunAllTestsExt" />
-			<Option target="DosRunAllTests1" />
 		</Unit>
 		<Unit filename="cpputest/tests/SimpleMutexTest.cpp">
 			<Option target="RunAllTests" />
 			<Option target="RunAllTestsExt" />
 			<Option target="XRunAllTests" />
 			<Option target="XRunAllTestsExt" />
-			<Option target="DosRunAllTests1" />
 		</Unit>
 		<Unit filename="cpputest/tests/SimpleStringTest.cpp">
 			<Option target="RunAllTests" />
