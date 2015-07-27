@@ -199,6 +199,7 @@
 					<Add directory="cpputest/include/Platforms/dos" />
 				</Compiler>
 				<Linker>
+					<Add option="option map" />
 					<Add directory="d:/watcom/lib286/dos" />
 					<Add directory="d:/watcom/lib286" />
 				</Linker>
@@ -1309,6 +1310,7 @@
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
 			<Option target="XRunAllTests" />
+			<Option target="DosMinimal" />
 		</Unit>
 		<Unit filename="cpputest/tests/CommandLineArgumentsTest.cpp">
 			<Option target="RunAllTests" />
@@ -1369,6 +1371,7 @@
 			<Option target="RunAllTestsExt" />
 			<Option target="RunAllTestsExt-gcov" />
 			<Option target="XRunAllTestsExt" />
+			<Option target="DosMinimal" />
 		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/MockExpectedCallTest.cpp">
 			<Option target="RunAllTestsExt" />
