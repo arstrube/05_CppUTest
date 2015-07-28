@@ -237,7 +237,7 @@
 					<Add directory="d:/bin/watcom/lib286" />
 				</Linker>
 				<ExtraCommands>
-					<Add after="D:\DOSBOX\DOSBox.exe exit -c $(TARGET_NAME).exe -c @pause -noconsole -exit" />
+					<Add after="D:\bin\DOSBox\DOSBox.exe exit -c $(TARGET_NAME).exe -c @pause -noconsole -exit" />
 					<Mode after="always" />
 				</ExtraCommands>
 			</Target>
@@ -270,7 +270,7 @@
 					<Add directory="d:/bin/watcom/lib286" />
 				</Linker>
 				<ExtraCommands>
-					<Add after="D:\DOSBOX\DOSBox.exe exit -c $(TARGET_NAME).exe -c @pause -noconsole -exit" />
+					<Add after="D:\bin\DOSBox\DOSBox.exe exit -c $(TARGET_NAME).exe -c @pause -noconsole -exit" />
 					<Mode after="always" />
 				</ExtraCommands>
 			</Target>
@@ -303,7 +303,7 @@
 					<Add directory="d:/bin/watcom/lib286" />
 				</Linker>
 				<ExtraCommands>
-					<Add after="D:\DOSBOX\DOSBox.exe exit -c $(TARGET_NAME).exe -c @pause -noconsole -exit" />
+					<Add after="D:\bin\DOSBox\DOSBox.exe exit -c $(TARGET_NAME).exe -c @pause -noconsole -exit" />
 					<Mode after="always" />
 				</ExtraCommands>
 			</Target>
@@ -336,7 +336,7 @@
 					<Add directory="d:/bin/watcom/lib286" />
 				</Linker>
 				<ExtraCommands>
-					<Add after="D:\DOSBOX\DOSBox.exe exit -c $(TARGET_NAME).exe -c @pause -noconsole -exit" />
+					<Add after="D:\bin\DOSBox\DOSBox.exe exit -c $(TARGET_NAME).exe -c @pause -noconsole -exit" />
 					<Mode after="always" />
 				</ExtraCommands>
 			</Target>
