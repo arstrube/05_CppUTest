@@ -187,7 +187,7 @@
 				<Option projectLibDirsRelation="1" />
 				<Compiler>
 					<Add option="-xs" />
-					<Add option="-od" />
+					<Add option="-os" />
 					<Add option="-oc" />
 					<Add option="-d0" />
 					<Add option="-w=3" />
@@ -199,7 +199,7 @@
 					<Add directory="cpputest/include/Platforms/dos" />
 				</Compiler>
 				<Linker>
-					<Add option="option map, stack=56k system dos" />
+					<Add option="option map, stack=55k system dos" />
 					<Add directory="d:/bin/watcom/lib286/dos" />
 					<Add directory="d:/bin/watcom/lib286" />
 				</Linker>
@@ -1316,6 +1316,7 @@
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
 			<Option target="XRunAllTests" />
+			<Option target="cppudos" />
 		</Unit>
 		<Unit filename="cpputest/tests/CommandLineTestRunnerTest.cpp">
 			<Option target="RunAllTests" />
