@@ -1634,10 +1634,11 @@
 			<Option target="CPPUEXT1" />
 			<Option target="CPPUEXT2" />
 		</Unit>
-		<Unit filename="cpputest/tests/CppUTestExt/CodeMemoryReportFormatterTest.cpp">
+		<Unit filename="cpputest/tests/CppUTestExt/CodeMemoryReportFmtTest.cpp">
 			<Option target="RunAllTestsExt" />
 			<Option target="RunAllTestsExt-gcov" />
 			<Option target="XRunAllTestsExt" />
+			<Option target="CPPUEXT1" />
 		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/GMockTest.cpp">
 			<Option target="RunAllTestsExt" />
@@ -1693,10 +1694,8 @@
 			<Option target="RunAllTestsExt-gcov" />
 			<Option target="XRunAllTestsExt" />
 		</Unit>
-		<Unit filename="cpputest/tests/CppUTestExt/MockExpectedFunctionsListTest.cpp">
-			<Option target="RunAllTestsExt" />
-			<Option target="RunAllTestsExt-gcov" />
-			<Option target="XRunAllTestsExt" />
+		<Unit filename="cpputest/tests/CppUTestExt/MockExpectedFunctsListTest.cpp">
+			<Option target="CPPUEXT1" />
 		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/MockFailureTest.cpp">
 			<Option target="RunAllTestsExt" />
@@ -1777,10 +1776,11 @@
 			<Option target="XRunAllTests" />
 			<Option target="CPPU1" />
 		</Unit>
-		<Unit filename="cpputest/tests/MemoryLeakOperatorOverloadsTest.cpp">
+		<Unit filename="cpputest/tests/MemoryLeakOperatorOvlTest.cpp">
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
 			<Option target="XRunAllTests" />
+			<Option target="CPPU1" />
 		</Unit>
 		<Unit filename="cpputest/tests/MemoryLeakWarningTest.cpp">
 			<Option target="RunAllTests" />
