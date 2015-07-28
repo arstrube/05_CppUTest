@@ -199,7 +199,7 @@
 					<Add directory="cpputest/include/Platforms/dos" />
 				</Compiler>
 				<Linker>
-					<Add option="option map, stack=57k system dos" />
+					<Add option="option map, stack=56k system dos" />
 					<Add directory="d:/bin/watcom/lib286/dos" />
 					<Add directory="d:/bin/watcom/lib286" />
 				</Linker>
@@ -1558,6 +1558,7 @@
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
 			<Option target="XRunAllTests" />
+			<Option target="cppudos" />
 		</Unit>
 		<Unit filename="xtreme/UtestPlatformWrapper.cpp">
 			<Option target="XRunAllTests" />
