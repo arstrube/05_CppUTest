@@ -180,7 +180,6 @@
 				<Option object_output="out" />
 				<Option type="1" />
 				<Option compiler="openwatcom_16bit_compiler" />
-				<Option parameters="-v" />
 				<Option projectCompilerOptionsRelation="1" />
 				<Option projectLinkerOptionsRelation="1" />
 				<Option projectIncludeDirsRelation="1" />
@@ -203,6 +202,10 @@
 					<Add directory="d:/bin/watcom/lib286/dos" />
 					<Add directory="d:/bin/watcom/lib286" />
 				</Linker>
+				<ExtraCommands>
+					<Add after="D:\DOSBOX\DOSBox.exe exit -c cppudos.exe -c @pause -noconsole -exit" />
+					<Mode after="always" />
+				</ExtraCommands>
 			</Target>
 		</Build>
 		<VirtualTargets>
