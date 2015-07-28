@@ -1225,6 +1225,9 @@
 			<Option target="CppUTest-gcov" />
 			<Option target="XCppUTest" />
 		</Unit>
+		<Unit filename="cpputest/src/Platforms/Dos/UtestPlatform.cpp">
+			<Option target="cppudos" />
+		</Unit>
 		<Unit filename="cpputest/src/Platforms/GccNoStdC/UtestPlatform.cpp">
 			<Option link="0" />
 			<Option target="CppUTest" />
@@ -1270,9 +1273,6 @@
 			<Option target="CppUTest" />
 			<Option target="CppUTest-gcov" />
 			<Option target="XCppUTest" />
-		</Unit>
-		<Unit filename="cpputest/src/Platforms/dos/UtestPlatform.cpp">
-			<Option target="cppudos" />
 		</Unit>
 		<Unit filename="cpputest/tests/AllTests.cpp">
 			<Option target="RunAllTests" />
