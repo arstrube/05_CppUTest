@@ -175,39 +175,6 @@
 					<Add directory="cpputest/lib" />
 				</Linker>
 			</Target>
-			<Target title="cppudos">
-				<Option output="$(TARGET_NAME).exe" prefix_auto="1" extension_auto="0" />
-				<Option object_output="out" />
-				<Option type="1" />
-				<Option compiler="openwatcom_16bit_compiler" />
-				<Option projectCompilerOptionsRelation="1" />
-				<Option projectLinkerOptionsRelation="1" />
-				<Option projectIncludeDirsRelation="1" />
-				<Option projectLibDirsRelation="1" />
-				<Compiler>
-					<Add option="-xds" />
-					<Add option="-os" />
-					<Add option="-oc" />
-					<Add option="-d0" />
-					<Add option="-w=3" />
-					<Add option="-ml" />
-					<Add option="-bcl=dos" />
-					<Add option="-dCPPUTEST_MEM_LEAK_DETECTION_DISABLED=1" />
-					<Add option="-dCPPUTEST_STD_CPP_LIB_DISABLED=1" />
-					<Add directory="cpputest" />
-					<Add directory="cpputest/include" />
-					<Add directory="cpputest/include/Platforms/dos" />
-				</Compiler>
-				<Linker>
-					<Add option="option map, stack=55k system dos" />
-					<Add directory="d:/bin/watcom/lib286/dos" />
-					<Add directory="d:/bin/watcom/lib286" />
-				</Linker>
-				<ExtraCommands>
-					<Add after="D:\DOSBOX\DOSBox.exe exit -c cppudos.exe -c @pause -noconsole -exit" />
-					<Mode after="always" />
-				</ExtraCommands>
-			</Target>
 			<Target title="CPPU1">
 				<Option output="$(TARGET_NAME).exe" prefix_auto="1" extension_auto="0" />
 				<Option object_output="out" />
@@ -1213,7 +1180,6 @@
 			<Option target="CppUTestExt-gcov" />
 			<Option target="XCppUTestExt" />
 			<Option target="XRunAllTestsExt" />
-			<Option target="cppudos" />
 			<Option target="CPPUEXT1" />
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
@@ -1225,7 +1191,6 @@
 			<Option target="CppUTestExt-gcov" />
 			<Option target="XCppUTestExt" />
 			<Option target="XRunAllTestsExt" />
-			<Option target="cppudos" />
 			<Option target="CPPUEXT1" />
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
@@ -1237,7 +1202,6 @@
 			<Option target="CppUTestExt-gcov" />
 			<Option target="XCppUTestExt" />
 			<Option target="XRunAllTestsExt" />
-			<Option target="cppudos" />
 			<Option target="CPPUEXT1" />
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
@@ -1249,7 +1213,6 @@
 			<Option target="CppUTestExt-gcov" />
 			<Option target="XCppUTestExt" />
 			<Option target="XRunAllTestsExt" />
-			<Option target="cppudos" />
 			<Option target="CPPUEXT1" />
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
@@ -1263,7 +1226,6 @@
 			<Option target="ApplicationLib" />
 			<Option target="XCppUTestExt" />
 			<Option target="XRunAllTestsExt" />
-			<Option target="cppudos" />
 			<Option target="CPPUEXT1" />
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
@@ -1277,7 +1239,6 @@
 			<Option target="ApplicationLib" />
 			<Option target="XCppUTestExt" />
 			<Option target="XRunAllTestsExt" />
-			<Option target="cppudos" />
 			<Option target="CPPUEXT1" />
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
@@ -1289,7 +1250,6 @@
 			<Option target="CppUTestExt-gcov" />
 			<Option target="XCppUTestExt" />
 			<Option target="XRunAllTestsExt" />
-			<Option target="cppudos" />
 			<Option target="CPPUEXT1" />
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
@@ -1301,7 +1261,6 @@
 			<Option target="CppUTestExt-gcov" />
 			<Option target="XCppUTestExt" />
 			<Option target="XRunAllTestsExt" />
-			<Option target="cppudos" />
 			<Option target="CPPUEXT1" />
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
@@ -1313,7 +1272,6 @@
 			<Option target="CppUTestExt-gcov" />
 			<Option target="XCppUTestExt" />
 			<Option target="XRunAllTestsExt" />
-			<Option target="cppudos" />
 			<Option target="CPPUEXT1" />
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
@@ -1325,7 +1283,6 @@
 			<Option target="CppUTestExt-gcov" />
 			<Option target="XCppUTestExt" />
 			<Option target="XRunAllTestsExt" />
-			<Option target="cppudos" />
 			<Option target="CPPUEXT1" />
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
@@ -1337,7 +1294,6 @@
 			<Option target="CppUTestExt-gcov" />
 			<Option target="XCppUTestExt" />
 			<Option target="XRunAllTestsExt" />
-			<Option target="cppudos" />
 			<Option target="CPPUEXT1" />
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
@@ -1349,7 +1305,6 @@
 			<Option target="CppUTestExt-gcov" />
 			<Option target="XCppUTestExt" />
 			<Option target="XRunAllTestsExt" />
-			<Option target="cppudos" />
 			<Option target="CPPUEXT1" />
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
@@ -1361,7 +1316,6 @@
 			<Option target="CppUTestExt-gcov" />
 			<Option target="XCppUTestExt" />
 			<Option target="XRunAllTestsExt" />
-			<Option target="cppudos" />
 			<Option target="CPPUEXT1" />
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
@@ -1372,7 +1326,6 @@
 			<Option target="CppUTest-gcov" />
 			<Option target="XRunAllTests" />
 			<Option target="XCppUTest" />
-			<Option target="cppudos" />
 			<Option target="CPPU1" />
 			<Option target="CPPU2" />
 			<Option target="CPPUEXT1" />
@@ -1385,7 +1338,6 @@
 			<Option target="CppUTest-gcov" />
 			<Option target="XRunAllTests" />
 			<Option target="XCppUTest" />
-			<Option target="cppudos" />
 			<Option target="CPPU1" />
 			<Option target="CPPU2" />
 			<Option target="CPPUEXT1" />
@@ -1398,7 +1350,6 @@
 			<Option target="CppUTest-gcov" />
 			<Option target="XRunAllTests" />
 			<Option target="XCppUTest" />
-			<Option target="cppudos" />
 			<Option target="CPPU1" />
 			<Option target="CPPU2" />
 			<Option target="CPPUEXT1" />
@@ -1411,7 +1362,6 @@
 			<Option target="CppUTest-gcov" />
 			<Option target="XRunAllTests" />
 			<Option target="XCppUTest" />
-			<Option target="cppudos" />
 			<Option target="CPPU1" />
 			<Option target="CPPU2" />
 			<Option target="CPPUEXT1" />
@@ -1424,7 +1374,6 @@
 			<Option target="CppUTest-gcov" />
 			<Option target="XRunAllTests" />
 			<Option target="XCppUTest" />
-			<Option target="cppudos" />
 			<Option target="CPPU1" />
 			<Option target="CPPU2" />
 			<Option target="CPPUEXT1" />
@@ -1437,7 +1386,6 @@
 			<Option target="CppUTest-gcov" />
 			<Option target="XRunAllTests" />
 			<Option target="XCppUTest" />
-			<Option target="cppudos" />
 			<Option target="CPPU1" />
 			<Option target="CPPU2" />
 			<Option target="CPPUEXT1" />
@@ -1450,7 +1398,6 @@
 			<Option target="CppUTest-gcov" />
 			<Option target="XRunAllTests" />
 			<Option target="XCppUTest" />
-			<Option target="cppudos" />
 			<Option target="CPPU1" />
 			<Option target="CPPU2" />
 			<Option target="CPPUEXT1" />
@@ -1463,7 +1410,6 @@
 			<Option target="CppUTest-gcov" />
 			<Option target="XRunAllTests" />
 			<Option target="XCppUTest" />
-			<Option target="cppudos" />
 			<Option target="CPPU1" />
 			<Option target="CPPU2" />
 			<Option target="CPPUEXT1" />
@@ -1476,7 +1422,6 @@
 			<Option target="CppUTest-gcov" />
 			<Option target="XRunAllTests" />
 			<Option target="XCppUTest" />
-			<Option target="cppudos" />
 			<Option target="CPPU1" />
 			<Option target="CPPU2" />
 			<Option target="CPPUEXT1" />
@@ -1489,7 +1434,6 @@
 			<Option target="CppUTest-gcov" />
 			<Option target="XRunAllTests" />
 			<Option target="XCppUTest" />
-			<Option target="cppudos" />
 			<Option target="CPPU1" />
 			<Option target="CPPU2" />
 			<Option target="CPPUEXT1" />
@@ -1502,7 +1446,6 @@
 			<Option target="CppUTest-gcov" />
 			<Option target="XRunAllTests" />
 			<Option target="XCppUTest" />
-			<Option target="cppudos" />
 			<Option target="CPPU1" />
 			<Option target="CPPU2" />
 			<Option target="CPPUEXT1" />
@@ -1515,7 +1458,6 @@
 			<Option target="CppUTest-gcov" />
 			<Option target="XRunAllTests" />
 			<Option target="XCppUTest" />
-			<Option target="cppudos" />
 			<Option target="CPPU1" />
 			<Option target="CPPU2" />
 			<Option target="CPPUEXT1" />
@@ -1528,7 +1470,6 @@
 			<Option target="CppUTest-gcov" />
 			<Option target="XRunAllTests" />
 			<Option target="XCppUTest" />
-			<Option target="cppudos" />
 			<Option target="CPPU1" />
 			<Option target="CPPU2" />
 			<Option target="CPPUEXT1" />
@@ -1541,7 +1482,6 @@
 			<Option target="CppUTest-gcov" />
 			<Option target="XRunAllTests" />
 			<Option target="XCppUTest" />
-			<Option target="cppudos" />
 			<Option target="CPPU1" />
 			<Option target="CPPU2" />
 			<Option target="CPPUEXT1" />
@@ -1554,7 +1494,6 @@
 			<Option target="CppUTest-gcov" />
 			<Option target="XRunAllTests" />
 			<Option target="XCppUTest" />
-			<Option target="cppudos" />
 			<Option target="CPPU1" />
 			<Option target="CPPU2" />
 			<Option target="CPPUEXT1" />
@@ -1567,7 +1506,6 @@
 			<Option target="CppUTest-gcov" />
 			<Option target="XRunAllTests" />
 			<Option target="XCppUTest" />
-			<Option target="cppudos" />
 			<Option target="CPPU1" />
 			<Option target="CPPU2" />
 			<Option target="CPPUEXT1" />
@@ -1583,7 +1521,6 @@
 			<Option target="XCppUTest" />
 		</Unit>
 		<Unit filename="cpputest/src/Platforms/Dos/UtestPlatform.cpp">
-			<Option target="cppudos" />
 			<Option target="CPPU1" />
 			<Option target="CPPU2" />
 			<Option target="CPPUEXT1" />
@@ -1641,7 +1578,6 @@
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
 			<Option target="XRunAllTests" />
-			<Option target="cppudos" />
 			<Option target="CPPU1" />
 			<Option target="CPPU2" />
 		</Unit>
@@ -1660,7 +1596,6 @@
 			<Option target="XCppUTest" />
 			<Option target="XCppUTestExt" />
 			<Option target="XRunAllTestsExt" />
-			<Option target="cppudos" />
 		</Unit>
 		<Unit filename="cpputest/tests/AllocLetTestFree.c">
 			<Option compilerVar="CC" />
@@ -1684,7 +1619,6 @@
 			<Option target="XCppUTest" />
 			<Option target="XCppUTestExt" />
 			<Option target="XRunAllTestsExt" />
-			<Option target="cppudos" />
 		</Unit>
 		<Unit filename="cpputest/tests/AllocLetTestFreeTest.cpp">
 			<Option target="RunAllTests" />
@@ -1714,7 +1648,6 @@
 			<Option target="XCppUTest" />
 			<Option target="XCppUTestExt" />
 			<Option target="XRunAllTestsExt" />
-			<Option target="cppudos" />
 		</Unit>
 		<Unit filename="cpputest/tests/AllocationInCppFile.cpp">
 			<Option target="RunAllTests" />
@@ -1737,27 +1670,23 @@
 			<Option target="XCppUTest" />
 			<Option target="XCppUTestExt" />
 			<Option target="XRunAllTestsExt" />
-			<Option target="cppudos" />
 		</Unit>
 		<Unit filename="cpputest/tests/CheatSheetTest.cpp">
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
 			<Option target="XRunAllTests" />
-			<Option target="cppudos" />
 			<Option target="CPPU1" />
 		</Unit>
 		<Unit filename="cpputest/tests/CommandLineArgumentsTest.cpp">
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
 			<Option target="XRunAllTests" />
-			<Option target="cppudos" />
 			<Option target="CPPU1" />
 		</Unit>
 		<Unit filename="cpputest/tests/CommandLineTestRunnerTest.cpp">
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
 			<Option target="XRunAllTests" />
-			<Option target="cppudos" />
 			<Option target="CPPU1" />
 		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/AllTests.cpp">
@@ -1821,7 +1750,6 @@
 			<Option target="RunAllTestsExt" />
 			<Option target="RunAllTestsExt-gcov" />
 			<Option target="XRunAllTestsExt" />
-			<Option target="cppudos" />
 			<Option target="CPPUEXT1" />
 		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/MockExpectedCallTest.cpp">
@@ -1837,7 +1765,6 @@
 			<Option target="RunAllTestsExt" />
 			<Option target="RunAllTestsExt-gcov" />
 			<Option target="XRunAllTestsExt" />
-			<Option target="cppudos" />
 			<Option target="CPPUEXT1" />
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
@@ -1900,7 +1827,6 @@
 			<Option target="RunAllTestsExt" />
 			<Option target="RunAllTestsExt-gcov" />
 			<Option target="XRunAllTestsExt" />
-			<Option target="cppudos" />
 			<Option target="CPPUEXT1" />
 			<Option target="CPPUEXT2" />
 		</Unit>
@@ -1932,7 +1858,6 @@
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
 			<Option target="XRunAllTests" />
-			<Option target="cppudos" />
 			<Option target="CPPU1" />
 		</Unit>
 		<Unit filename="cpputest/tests/PreprocessorTest.cpp">
@@ -2046,7 +1971,6 @@
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
 			<Option target="XRunAllTests" />
-			<Option target="cppudos" />
 			<Option target="CPPU1" />
 			<Option target="CPPU2" />
 		</Unit>
