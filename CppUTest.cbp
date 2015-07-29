@@ -1770,8 +1770,6 @@
 			<Option target="XRunAllTestsExt" />
 			<Option target="CPPUEXT1" />
 			<Option target="CPPUEXT2" />
-			<Option target="CPPUEXT3" />
-			<Option target="CPPUEXT4" />
 		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/MockFailureTest.h">
 			<Option target="CppUTest" />
