@@ -1619,6 +1619,7 @@
 			<Option target="XCppUTest" />
 			<Option target="XCppUTestExt" />
 			<Option target="XRunAllTestsExt" />
+			<Option target="CPPU1" />
 		</Unit>
 		<Unit filename="cpputest/tests/AllocLetTestFreeTest.cpp">
 			<Option target="RunAllTests" />
@@ -1648,6 +1649,7 @@
 			<Option target="XCppUTest" />
 			<Option target="XCppUTestExt" />
 			<Option target="XRunAllTestsExt" />
+			<Option target="CPPU1" />
 		</Unit>
 		<Unit filename="cpputest/tests/AllocationInCppFile.cpp">
 			<Option target="RunAllTests" />
@@ -1670,6 +1672,7 @@
 			<Option target="XCppUTest" />
 			<Option target="XCppUTestExt" />
 			<Option target="XRunAllTestsExt" />
+			<Option target="CPPU1" />
 		</Unit>
 		<Unit filename="cpputest/tests/CheatSheetTest.cpp">
 			<Option target="RunAllTests" />
@@ -1930,7 +1933,6 @@
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
 			<Option target="XRunAllTests" />
-			<Option target="CPPU1" />
 			<Option target="CPPU2" />
 		</Unit>
 		<Unit filename="cpputest/tests/TestOutputTest.cpp">
@@ -1938,21 +1940,18 @@
 			<Option target="RunAllTests-gcov" />
 			<Option target="XRunAllTests" />
 			<Option target="CPPU1" />
-			<Option target="CPPU2" />
 		</Unit>
 		<Unit filename="cpputest/tests/TestRegistryTest.cpp">
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
 			<Option target="XRunAllTests" />
 			<Option target="CPPU1" />
-			<Option target="CPPU2" />
 		</Unit>
 		<Unit filename="cpputest/tests/TestResultTest.cpp">
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
 			<Option target="XRunAllTests" />
 			<Option target="CPPU1" />
-			<Option target="CPPU2" />
 		</Unit>
 		<Unit filename="cpputest/tests/TestUTestMacro.cpp">
 			<Option target="RunAllTests" />
@@ -1965,14 +1964,12 @@
 			<Option target="RunAllTests-gcov" />
 			<Option target="XRunAllTests" />
 			<Option target="CPPU1" />
-			<Option target="CPPU2" />
 		</Unit>
 		<Unit filename="cpputest/tests/UtestTest.cpp">
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
 			<Option target="XRunAllTests" />
 			<Option target="CPPU1" />
-			<Option target="CPPU2" />
 		</Unit>
 		<Unit filename="xtreme/UtestPlatformWrapper.cpp">
 			<Option target="XRunAllTests" />
