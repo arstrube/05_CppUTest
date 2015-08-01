@@ -952,10 +952,13 @@
 			<Option target="CPPUEXT3" />
 			<Option target="CPPUEXT4" />
 		</Unit>
-		<Unit filename="cpputest/tests/CppUTestExt/CodeMemoryReportFmtTest.cpp">
+		<Unit filename="cpputest/tests/CppUTestExt/CodeMemoryReporterTest.cpp">
 			<Option target="RunAllTestsExt" />
 			<Option target="RunAllTestsExt-gcov" />
 			<Option target="XRunAllTestsExt" />
+			<Option target="CPPUEXT1" />
+		</Unit>
+		<Unit filename="cpputest/tests/CppUTestExt/ExpectedFunctionsListTest.cpp">
 			<Option target="CPPUEXT1" />
 		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/GMockTest.cpp">
@@ -1012,9 +1015,6 @@
 			<Option target="XRunAllTestsExt" />
 			<Option target="CPPUEXT1" />
 		</Unit>
-		<Unit filename="cpputest/tests/CppUTestExt/MockExpectedFunctsListTest.cpp">
-			<Option target="CPPUEXT1" />
-		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/MockFailureTest.cpp">
 			<Option target="RunAllTestsExt" />
 			<Option target="RunAllTestsExt-gcov" />
@@ -1036,16 +1036,15 @@
 			<Option target="CPPUEXT2" />
 		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/MockSupport1Test.cpp">
-			<Option target="RunAllTestsExt" />
-			<Option target="RunAllTestsExt-gcov" />
-			<Option target="XRunAllTestsExt" />
 			<Option target="CPPUEXT3" />
 		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/MockSupport2Test.cpp">
+			<Option target="CPPUEXT4" />
+		</Unit>
+		<Unit filename="cpputest/tests/CppUTestExt/MockSupportTest.cpp">
 			<Option target="RunAllTestsExt" />
 			<Option target="RunAllTestsExt-gcov" />
 			<Option target="XRunAllTestsExt" />
-			<Option target="CPPUEXT4" />
 		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/MockSupportTest.h" />
 		<Unit filename="cpputest/tests/CppUTestExt/MockSupport_cTest.cpp">
@@ -1081,13 +1080,13 @@
 			<Option target="XRunAllTests" />
 			<Option target="CPPU1" />
 		</Unit>
-		<Unit filename="cpputest/tests/MemoryLeakOperatorOvlTest.cpp">
+		<Unit filename="cpputest/tests/MemoryLeakWarningTest.cpp">
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
 			<Option target="XRunAllTests" />
 			<Option target="CPPU1" />
 		</Unit>
-		<Unit filename="cpputest/tests/MemoryLeakWarningTest.cpp">
+		<Unit filename="cpputest/tests/MemoryOperatorOverloadTest.cpp">
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
 			<Option target="XRunAllTests" />
