@@ -855,10 +855,9 @@
 			<Option target="XCppUTest" />
 		</Unit>
 		<Unit filename="cpputest/src/Platforms/Iar/UtestPlatform.cpp">
+			<Option compile="0" />
 			<Option link="0" />
 			<Option target="CppUTest" />
-			<Option target="CppUTest-gcov" />
-			<Option target="XCppUTest" />
 		</Unit>
 		<Unit filename="cpputest/src/Platforms/Symbian/SymbianMemoryLeakWarning.cpp">
 			<Option compile="0" />
@@ -1020,7 +1019,6 @@
 			<Option target="RunAllTestsExt-gcov" />
 			<Option target="XRunAllTestsExt" />
 			<Option target="CPPUEXT1" />
-			<Option target="CPPUEXT2" />
 		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/MockFailureTest.h" />
 		<Unit filename="cpputest/tests/CppUTestExt/MockNamedValueTest.cpp">
@@ -1078,7 +1076,6 @@
 			<Option target="RunAllTestsExt" />
 			<Option target="RunAllTestsExt-gcov" />
 			<Option target="XRunAllTestsExt" />
-			<Option target="CPPUEXT1" />
 			<Option target="CPPUEXT2" />
 		</Unit>
 		<Unit filename="cpputest/tests/JUnitOutputTest.cpp">
