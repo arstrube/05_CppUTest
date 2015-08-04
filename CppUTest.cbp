@@ -1035,16 +1035,29 @@
 			<Option target="XRunAllTestsExt" />
 			<Option target="CPPUEXT2" />
 		</Unit>
-		<Unit filename="cpputest/tests/CppUTestExt/MockSupport1Test.cpp">
-			<Option target="CPPUEXT3" />
+		<Unit filename="cpputest/tests/CppUTestExt/MockCallTest.cpp">
+			<Option target="RunAllTestsExt" />
+			<Option target="RunAllTestsExt-gcov" />
+			<Option target="XRunAllTestsExt" />
+			<Option target="CPPUEXT4" />
 		</Unit>
-		<Unit filename="cpputest/tests/CppUTestExt/MockSupport2Test.cpp">
+		<Unit filename="cpputest/tests/CppUTestExt/MockParameterTest.cpp">
+			<Option target="RunAllTestsExt" />
+			<Option target="RunAllTestsExt-gcov" />
+			<Option target="XRunAllTestsExt" />
+			<Option target="CPPUEXT4" />
+		</Unit>
+		<Unit filename="cpputest/tests/CppUTestExt/MockStrictOrderTest.cpp">
+			<Option target="RunAllTestsExt" />
+			<Option target="RunAllTestsExt-gcov" />
+			<Option target="XRunAllTestsExt" />
 			<Option target="CPPUEXT4" />
 		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/MockSupportTest.cpp">
 			<Option target="RunAllTestsExt" />
 			<Option target="RunAllTestsExt-gcov" />
 			<Option target="XRunAllTestsExt" />
+			<Option target="CPPUEXT3" />
 		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/MockSupportTest.h" />
 		<Unit filename="cpputest/tests/CppUTestExt/MockSupport_cTest.cpp">
