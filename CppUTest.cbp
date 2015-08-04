@@ -330,7 +330,6 @@
 					<Add option="-bcl=dos" />
 					<Add option="-dCPPUTEST_MEM_LEAK_DETECTION_DISABLED=1" />
 					<Add option="-dCPPUTEST_STD_CPP_LIB_DISABLED=1" />
-					<Add option="-dMOCKSUPPORTTEST_DONT_COMPILE_SECOND_HALF=1" />
 					<Add directory="cpputest" />
 					<Add directory="cpputest/include" />
 					<Add directory="cpputest/include/Platforms/dos" />
@@ -365,7 +364,6 @@
 					<Add option="-bcl=dos" />
 					<Add option="-dCPPUTEST_MEM_LEAK_DETECTION_DISABLED=1" />
 					<Add option="-dCPPUTEST_STD_CPP_LIB_DISABLED=1" />
-					<Add option="-dMOCKSUPPORTTEST_DONT_COMPILE_FIRST_HALF=1" />
 					<Add directory="cpputest" />
 					<Add directory="cpputest/include" />
 					<Add directory="cpputest/include/Platforms/dos" />
