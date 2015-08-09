@@ -3,10 +3,15 @@
 *.app
 *.a
 *.eap
+*.err
+*.EXE
 *.exe
 *.depend
 *.layout
+*.map
 *.stackdump
 *.xml
 .DS_Store
 *.cbTemp
+stderr.txt
+stdout.txt
