@@ -191,6 +191,7 @@
 					<Add option="-d0" />
 					<Add option="-w=3" />
 					<Add option="-ml" />
+					<Add option="-zm" />
 					<Add option="-bcl=dos" />
 					<Add option="-dCPPUTEST_MEM_LEAK_DETECTION_DISABLED=1" />
 					<Add option="-dCPPUTEST_STD_CPP_LIB_DISABLED=1" />
@@ -330,7 +331,6 @@
 					<Add option="-bcl=dos" />
 					<Add option="-dCPPUTEST_MEM_LEAK_DETECTION_DISABLED=1" />
 					<Add option="-dCPPUTEST_STD_CPP_LIB_DISABLED=1" />
-					<Add option="-dMOCKSUPPORTTEST_DONT_COMPILE_SECOND_HALF=1" />
 					<Add directory="cpputest" />
 					<Add directory="cpputest/include" />
 					<Add directory="cpputest/include/Platforms/dos" />
@@ -365,7 +365,6 @@
 					<Add option="-bcl=dos" />
 					<Add option="-dCPPUTEST_MEM_LEAK_DETECTION_DISABLED=1" />
 					<Add option="-dCPPUTEST_STD_CPP_LIB_DISABLED=1" />
-					<Add option="-dMOCKSUPPORTTEST_DONT_COMPILE_FIRST_HALF=1" />
 					<Add directory="cpputest" />
 					<Add directory="cpputest/include" />
 					<Add directory="cpputest/include/Platforms/dos" />
@@ -834,14 +833,6 @@
 			<Option target="CppUTest-gcov" />
 			<Option target="XCppUTest" />
 		</Unit>
-		<Unit filename="cpputest/src/Platforms/Dos/UtestPlatform.cpp">
-			<Option target="CPPU1" />
-			<Option target="CPPU2" />
-			<Option target="CPPUEXT1" />
-			<Option target="CPPUEXT2" />
-			<Option target="CPPUEXT3" />
-			<Option target="CPPUEXT4" />
-		</Unit>
 		<Unit filename="cpputest/src/Platforms/GccNoStdC/UtestPlatform.cpp">
 			<Option link="0" />
 			<Option target="CppUTest" />
@@ -886,6 +877,14 @@
 			<Option target="CppUTest" />
 			<Option target="CppUTest-gcov" />
 			<Option target="XCppUTest" />
+		</Unit>
+		<Unit filename="cpputest/src/Platforms/dos/UtestPlatform.cpp">
+			<Option target="CPPU1" />
+			<Option target="CPPU2" />
+			<Option target="CPPUEXT1" />
+			<Option target="CPPUEXT2" />
+			<Option target="CPPUEXT3" />
+			<Option target="CPPUEXT4" />
 		</Unit>
 		<Unit filename="cpputest/tests/AllTests.cpp">
 			<Option target="RunAllTests" />
@@ -1002,6 +1001,12 @@
 			<Option target="XRunAllTestsExt" />
 			<Option target="CPPUEXT1" />
 		</Unit>
+		<Unit filename="cpputest/tests/CppUTestExt/MockCallTest.cpp">
+			<Option target="RunAllTestsExt" />
+			<Option target="RunAllTestsExt-gcov" />
+			<Option target="XRunAllTestsExt" />
+			<Option target="CPPUEXT4" />
+		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/MockCheatSheetTest.cpp">
 			<Option target="RunAllTestsExt" />
 			<Option target="RunAllTestsExt-gcov" />
@@ -1027,23 +1032,17 @@
 			<Option target="XRunAllTestsExt" />
 			<Option target="CPPUEXT2" />
 		</Unit>
-		<Unit filename="cpputest/tests/CppUTestExt/MockPluginTest.cpp">
-			<Option target="RunAllTestsExt" />
-			<Option target="RunAllTestsExt-gcov" />
-			<Option target="XRunAllTestsExt" />
-			<Option target="CPPUEXT2" />
-		</Unit>
-		<Unit filename="cpputest/tests/CppUTestExt/MockCallTest.cpp">
-			<Option target="RunAllTestsExt" />
-			<Option target="RunAllTestsExt-gcov" />
-			<Option target="XRunAllTestsExt" />
-			<Option target="CPPUEXT4" />
-		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/MockParameterTest.cpp">
 			<Option target="RunAllTestsExt" />
 			<Option target="RunAllTestsExt-gcov" />
 			<Option target="XRunAllTestsExt" />
 			<Option target="CPPUEXT4" />
+		</Unit>
+		<Unit filename="cpputest/tests/CppUTestExt/MockPluginTest.cpp">
+			<Option target="RunAllTestsExt" />
+			<Option target="RunAllTestsExt-gcov" />
+			<Option target="XRunAllTestsExt" />
+			<Option target="CPPUEXT2" />
 		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/MockStrictOrderTest.cpp">
 			<Option target="RunAllTestsExt" />
@@ -1076,7 +1075,7 @@
 			<Option target="RunAllTestsExt" />
 			<Option target="RunAllTestsExt-gcov" />
 			<Option target="XRunAllTestsExt" />
-			<Option target="CPPUEXT2" />
+			<Option target="CPPUEXT1" />
 		</Unit>
 		<Unit filename="cpputest/tests/JUnitOutputTest.cpp">
 			<Option target="RunAllTests" />
