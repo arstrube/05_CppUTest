@@ -1014,6 +1014,12 @@
 			<Option target="XRunAllTestsExt" />
 			<Option target="CPPUEXT1" />
 		</Unit>
+		<Unit filename="cpputest/tests/CppUTestExt/MockComparatorCopierTest.cpp">
+			<Option target="RunAllTestsExt" />
+			<Option target="RunAllTestsExt-gcov" />
+			<Option target="XRunAllTestsExt" />
+			<Option target="CPPUEXT3" />
+		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/MockExpectedCallTest.cpp">
 			<Option target="RunAllTestsExt" />
 			<Option target="RunAllTestsExt-gcov" />
