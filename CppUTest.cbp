@@ -1025,7 +1025,6 @@
 			<Option target="RunAllTestsExt-gcov" />
 			<Option target="XRunAllTestsExt" />
 			<Option target="CPPUEXT1" />
-			<Option target="CPPUEXT2" />
 		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/MockFailureTest.h" />
 		<Unit filename="cpputest/tests/CppUTestExt/MockNamedValueTest.cpp">
@@ -1078,7 +1077,6 @@
 			<Option target="RunAllTestsExt-gcov" />
 			<Option target="XRunAllTestsExt" />
 			<Option target="CPPUEXT1" />
-			<Option target="CPPUEXT2" />
 		</Unit>
 		<Unit filename="cpputest/tests/JUnitOutputTest.cpp">
 			<Option target="RunAllTests" />
