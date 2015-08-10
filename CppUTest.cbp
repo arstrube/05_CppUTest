@@ -846,10 +846,9 @@
 			<Option target="XCppUTest" />
 		</Unit>
 		<Unit filename="cpputest/src/Platforms/Iar/UtestPlatform.cpp">
+			<Option compile="0" />
 			<Option link="0" />
 			<Option target="CppUTest" />
-			<Option target="CppUTest-gcov" />
-			<Option target="XCppUTest" />
 		</Unit>
 		<Unit filename="cpputest/src/Platforms/Symbian/SymbianMemoryLeakWarning.cpp">
 			<Option compile="0" />
