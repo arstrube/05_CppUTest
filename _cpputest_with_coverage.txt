@@ -1,0 +1,20 @@
+##### To install Lcov:
+$ pushd /cygdrive/c/data/00_Dev/66_linux/lcov-1.10
+$ make install
+$ popd
+
+##### To rebuild CppUTest with coverage info (all in one)
+$ make distclean; rm -rf lcov .deps .libs; ../configure --enable-coverage CFLAGS= CXXFLAGS=; make tdd
+
+##### To reconfigure & build CppUTest with coverage info
+$ ../configure --enable-coverage CFLAGS= CXXFLAGS=; make tdd
+
+##### To run Lcov (should one really remove *.gcda at this point? Only if followed by make tdd.
+$ rm -rf lcov temp.txt info.txt *.gcda
+$ lcov -c -d . -o temp.txt
+$ lcov -r temp.txt /usr\* -o info.txt
+$ genhtml -o ./lcov info.txt
+
+##### Recreate coverage output
+$ rm -rf *.gcda
+$ make tdd
