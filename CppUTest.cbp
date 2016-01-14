@@ -189,10 +189,12 @@
 					<Add option="-os" />
 					<Add option="-oc" />
 					<Add option="-d0" />
+					<Add option="-we" />
 					<Add option="-w=3" />
 					<Add option="-ml" />
 					<Add option="-zm" />
 					<Add option="-bcl=dos" />
+					<Add option="-wcd=13 -wcd=367 -wcd=368 -wcd=391" />
 					<Add option="-dCPPUTEST_MEM_LEAK_DETECTION_DISABLED=1" />
 					<Add option="-dCPPUTEST_STD_CPP_LIB_DISABLED=1" />
 					<Add directory="cpputest" />
@@ -223,10 +225,12 @@
 					<Add option="-os" />
 					<Add option="-oc" />
 					<Add option="-d0" />
+					<Add option="-we" />
 					<Add option="-w=3" />
 					<Add option="-ml" />
 					<Add option="-zm" />
 					<Add option="-bcl=dos" />
+					<Add option="-wcd=13 -wcd=367 -wcd=368 -wcd=391" />
 					<Add option="-dCPPUTEST_MEM_LEAK_DETECTION_DISABLED=1" />
 					<Add option="-dCPPUTEST_STD_CPP_LIB_DISABLED=1" />
 					<Add directory="cpputest" />
@@ -257,10 +261,12 @@
 					<Add option="-os" />
 					<Add option="-oc" />
 					<Add option="-d0" />
+					<Add option="-we" />
 					<Add option="-w=3" />
 					<Add option="-ml" />
 					<Add option="-zm" />
 					<Add option="-bcl=dos" />
+					<Add option="-wcd=13 -wcd=367 -wcd=368 -wcd=391" />
 					<Add option="-dCPPUTEST_MEM_LEAK_DETECTION_DISABLED=1" />
 					<Add option="-dCPPUTEST_STD_CPP_LIB_DISABLED=1" />
 					<Add directory="cpputest" />
@@ -291,10 +297,12 @@
 					<Add option="-os" />
 					<Add option="-oc" />
 					<Add option="-d0" />
+					<Add option="-we" />
 					<Add option="-w=3" />
 					<Add option="-ml" />
 					<Add option="-zm" />
 					<Add option="-bcl=dos" />
+					<Add option="-wcd=13 -wcd=367 -wcd=368 -wcd=391" />
 					<Add option="-dCPPUTEST_MEM_LEAK_DETECTION_DISABLED=1" />
 					<Add option="-dCPPUTEST_STD_CPP_LIB_DISABLED=1" />
 					<Add directory="cpputest" />
@@ -325,10 +333,12 @@
 					<Add option="-os" />
 					<Add option="-oc" />
 					<Add option="-d0" />
+					<Add option="-we" />
 					<Add option="-w=3" />
 					<Add option="-ml" />
 					<Add option="-zm" />
 					<Add option="-bcl=dos" />
+					<Add option="-wcd=13 -wcd=367 -wcd=368 -wcd=391" />
 					<Add option="-dCPPUTEST_MEM_LEAK_DETECTION_DISABLED=1" />
 					<Add option="-dCPPUTEST_STD_CPP_LIB_DISABLED=1" />
 					<Add directory="cpputest" />
@@ -359,10 +369,12 @@
 					<Add option="-os" />
 					<Add option="-oc" />
 					<Add option="-d0" />
+					<Add option="-we" />
 					<Add option="-w=3" />
 					<Add option="-ml" />
 					<Add option="-zm" />
 					<Add option="-bcl=dos" />
+					<Add option="-wcd=13 -wcd=367 -wcd=368 -wcd=391" />
 					<Add option="-dCPPUTEST_MEM_LEAK_DETECTION_DISABLED=1" />
 					<Add option="-dCPPUTEST_STD_CPP_LIB_DISABLED=1" />
 					<Add directory="cpputest" />
@@ -857,6 +869,14 @@
 			<Option target="CppUTest-gcov" />
 			<Option target="XCppUTest" />
 		</Unit>
+		<Unit filename="cpputest/src/Platforms/Dos/UtestPlatform.cpp">
+			<Option target="CPPU1" />
+			<Option target="CPPU2" />
+			<Option target="CPPUEXT1" />
+			<Option target="CPPUEXT2" />
+			<Option target="CPPUEXT3" />
+			<Option target="CPPUEXT4" />
+		</Unit>
 		<Unit filename="cpputest/src/Platforms/GccNoStdC/UtestPlatform.cpp">
 			<Option link="0" />
 			<Option target="CppUTest" />
@@ -902,14 +922,6 @@
 			<Option target="CppUTest-gcov" />
 			<Option target="XCppUTest" />
 		</Unit>
-		<Unit filename="cpputest/src/Platforms/dos/UtestPlatform.cpp">
-			<Option target="CPPU1" />
-			<Option target="CPPU2" />
-			<Option target="CPPUEXT1" />
-			<Option target="CPPUEXT2" />
-			<Option target="CPPUEXT3" />
-			<Option target="CPPUEXT4" />
-		</Unit>
 		<Unit filename="cpputest/tests/AllTests.cpp">
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
@@ -937,21 +949,21 @@
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
 			<Option target="XRunAllTests" />
-			<Option target="CPPU1" />
+			<Option target="CPPU2" />
 		</Unit>
 		<Unit filename="cpputest/tests/AllocationInCFile.h" />
 		<Unit filename="cpputest/tests/AllocationInCppFile.cpp">
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
 			<Option target="XRunAllTests" />
-			<Option target="CPPU1" />
+			<Option target="CPPU2" />
 		</Unit>
 		<Unit filename="cpputest/tests/AllocationInCppFile.h" />
 		<Unit filename="cpputest/tests/CheatSheetTest.cpp">
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
 			<Option target="XRunAllTests" />
-			<Option target="CPPU1" />
+			<Option target="CPPU2" />
 		</Unit>
 		<Unit filename="cpputest/tests/CommandLineArgumentsTest.cpp">
 			<Option target="RunAllTests" />
@@ -1148,19 +1160,19 @@
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
 			<Option target="XRunAllTests" />
-			<Option target="CPPU1" />
+			<Option target="CPPU2" />
 		</Unit>
 		<Unit filename="cpputest/tests/MemoryLeakWarningTest.cpp">
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
 			<Option target="XRunAllTests" />
-			<Option target="CPPU1" />
+			<Option target="CPPU2" />
 		</Unit>
 		<Unit filename="cpputest/tests/MemoryOperatorOverloadTest.cpp">
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
 			<Option target="XRunAllTests" />
-			<Option target="CPPU1" />
+			<Option target="CPPU2" />
 		</Unit>
 		<Unit filename="cpputest/tests/PluginTest.cpp">
 			<Option target="RunAllTests" />
