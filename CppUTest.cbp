@@ -469,6 +469,16 @@
 		<Unit filename="cpputest/include/CppUTest/SimpleMutex.h" />
 		<Unit filename="cpputest/include/CppUTest/SimpleString.h" />
 		<Unit filename="cpputest/include/CppUTest/StandardCLibrary.h" />
+		<Unit filename="cpputest/include/CppUTest/TeamCityTestOutput.h">
+			<Option target="CppUTest" />
+			<Option target="RunAllTests" />
+			<Option target="CppUTest-gcov" />
+			<Option target="RunAllTests-gcov" />
+			<Option target="XRunAllTests" />
+			<Option target="XCppUTest" />
+			<Option target="CPPU1" />
+			<Option target="CPPU2" />
+		</Unit>
 		<Unit filename="cpputest/include/CppUTest/TestFailure.h" />
 		<Unit filename="cpputest/include/CppUTest/TestFilter.h" />
 		<Unit filename="cpputest/include/CppUTest/TestHarness.h" />
@@ -718,6 +728,20 @@
 			<Option target="CPPUEXT3" />
 			<Option target="CPPUEXT4" />
 		</Unit>
+		<Unit filename="cpputest/src/CppUTest/TeamCityTestOutput.cpp">
+			<Option target="CppUTest" />
+			<Option target="RunAllTests" />
+			<Option target="CppUTest-gcov" />
+			<Option target="RunAllTests-gcov" />
+			<Option target="XRunAllTests" />
+			<Option target="XCppUTest" />
+			<Option target="CPPU1" />
+			<Option target="CPPU2" />
+			<Option target="CPPUEXT1" />
+			<Option target="CPPUEXT2" />
+			<Option target="CPPUEXT3" />
+			<Option target="CPPUEXT4" />
+		</Unit>
 		<Unit filename="cpputest/src/CppUTest/TestFailure.cpp">
 			<Option target="CppUTest" />
 			<Option target="CppUTest-gcov" />
@@ -958,6 +982,9 @@
 		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/ExpectedFunctionsListTest.cpp">
 			<Option target="CPPUEXT1" />
+			<Option target="RunAllTestsExt" />
+			<Option target="RunAllTestsExt-gcov" />
+			<Option target="XRunAllTestsExt" />
 		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/GMockTest.cpp">
 			<Option target="RunAllTestsExt" />
@@ -1013,11 +1040,35 @@
 			<Option target="XRunAllTestsExt" />
 			<Option target="CPPUEXT1" />
 		</Unit>
+		<Unit filename="cpputest/tests/CppUTestExt/MockComparatorCopierTest.cpp">
+			<Option target="RunAllTestsExt" />
+			<Option target="RunAllTestsExt-gcov" />
+			<Option target="XRunAllTestsExt" />
+			<Option target="CPPUEXT3" />
+		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/MockExpectedCallTest.cpp">
 			<Option target="RunAllTestsExt" />
 			<Option target="RunAllTestsExt-gcov" />
 			<Option target="XRunAllTestsExt" />
 			<Option target="CPPUEXT1" />
+		</Unit>
+		<Unit filename="cpputest/tests/CppUTestExt/MockFailureReporterForTest.cpp">
+			<Option target="RunAllTestsExt" />
+			<Option target="RunAllTestsExt-gcov" />
+			<Option target="XRunAllTestsExt" />
+			<Option target="CPPUEXT1" />
+			<Option target="CPPUEXT2" />
+			<Option target="CPPUEXT3" />
+			<Option target="CPPUEXT4" />
+		</Unit>
+		<Unit filename="cpputest/tests/CppUTestExt/MockFailureReporterForTest.h">
+			<Option target="RunAllTestsExt" />
+			<Option target="RunAllTestsExt-gcov" />
+			<Option target="XRunAllTestsExt" />
+			<Option target="CPPUEXT1" />
+			<Option target="CPPUEXT2" />
+			<Option target="CPPUEXT3" />
+			<Option target="CPPUEXT4" />
 		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/MockFailureTest.cpp">
 			<Option target="RunAllTestsExt" />
@@ -1025,7 +1076,12 @@
 			<Option target="XRunAllTestsExt" />
 			<Option target="CPPUEXT1" />
 		</Unit>
-		<Unit filename="cpputest/tests/CppUTestExt/MockFailureTest.h" />
+		<Unit filename="cpputest/tests/CppUTestExt/MockHierarchyTest.cpp">
+			<Option target="RunAllTestsExt" />
+			<Option target="RunAllTestsExt-gcov" />
+			<Option target="XRunAllTestsExt" />
+			<Option target="CPPUEXT3" />
+		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/MockNamedValueTest.cpp">
 			<Option target="RunAllTestsExt" />
 			<Option target="RunAllTestsExt-gcov" />
@@ -1044,6 +1100,12 @@
 			<Option target="XRunAllTestsExt" />
 			<Option target="CPPUEXT2" />
 		</Unit>
+		<Unit filename="cpputest/tests/CppUTestExt/MockReturnValueTest.cpp">
+			<Option target="RunAllTestsExt" />
+			<Option target="RunAllTestsExt-gcov" />
+			<Option target="XRunAllTestsExt" />
+			<Option target="CPPUEXT3" />
+		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/MockStrictOrderTest.cpp">
 			<Option target="RunAllTestsExt" />
 			<Option target="RunAllTestsExt-gcov" />
@@ -1056,7 +1118,6 @@
 			<Option target="XRunAllTestsExt" />
 			<Option target="CPPUEXT3" />
 		</Unit>
-		<Unit filename="cpputest/tests/CppUTestExt/MockSupportTest.h" />
 		<Unit filename="cpputest/tests/CppUTestExt/MockSupport_cTest.cpp">
 			<Option target="RunAllTestsExt" />
 			<Option target="RunAllTestsExt-gcov" />
@@ -1116,16 +1177,12 @@
 		<Unit filename="cpputest/tests/SetPluginTest.cpp">
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
-			<Option target="RunAllTestsExt" />
 			<Option target="XRunAllTests" />
-			<Option target="XRunAllTestsExt" />
 			<Option target="CPPU1" />
 		</Unit>
 		<Unit filename="cpputest/tests/SimpleMutexTest.cpp">
 			<Option target="RunAllTests" />
-			<Option target="RunAllTestsExt" />
 			<Option target="XRunAllTests" />
-			<Option target="XRunAllTestsExt" />
 			<Option target="CPPU1" />
 		</Unit>
 		<Unit filename="cpputest/tests/SimpleStringTest.cpp">
@@ -1134,12 +1191,16 @@
 			<Option target="XRunAllTests" />
 			<Option target="CPPU2" />
 		</Unit>
+		<Unit filename="cpputest/tests/TeamCityOutputTest.cpp">
+			<Option target="RunAllTests" />
+			<Option target="RunAllTests-gcov" />
+			<Option target="XRunAllTests" />
+			<Option target="CPPU2" />
+		</Unit>
 		<Unit filename="cpputest/tests/TestFailureNaNTest.cpp">
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
-			<Option target="RunAllTestsExt" />
 			<Option target="XRunAllTests" />
-			<Option target="XRunAllTestsExt" />
 			<Option target="CPPU2" />
 		</Unit>
 		<Unit filename="cpputest/tests/TestFailureTest.cpp">
