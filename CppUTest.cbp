@@ -454,6 +454,7 @@
 		<Unit filename="cpputest/include/CppUTestExt/CodeMemoryReportFormatter.h" />
 		<Unit filename="cpputest/include/CppUTestExt/GMock.h" />
 		<Unit filename="cpputest/include/CppUTestExt/GTestConvertor.h" />
+		<Unit filename="cpputest/include/CppUTestExt/IEEE754ExceptionsPlugin.h" />
 		<Unit filename="cpputest/include/CppUTestExt/MemoryReportAllocator.h" />
 		<Unit filename="cpputest/include/CppUTestExt/MemoryReportFormatter.h" />
 		<Unit filename="cpputest/include/CppUTestExt/MemoryReporterPlugin.h" />
@@ -481,16 +482,7 @@
 		<Unit filename="cpputest/include/CppUTest/SimpleMutex.h" />
 		<Unit filename="cpputest/include/CppUTest/SimpleString.h" />
 		<Unit filename="cpputest/include/CppUTest/StandardCLibrary.h" />
-		<Unit filename="cpputest/include/CppUTest/TeamCityTestOutput.h">
-			<Option target="CppUTest" />
-			<Option target="RunAllTests" />
-			<Option target="CppUTest-gcov" />
-			<Option target="RunAllTests-gcov" />
-			<Option target="XRunAllTests" />
-			<Option target="XCppUTest" />
-			<Option target="CPPU1" />
-			<Option target="CPPU2" />
-		</Unit>
+		<Unit filename="cpputest/include/CppUTest/TeamCityTestOutput.h" />
 		<Unit filename="cpputest/include/CppUTest/TestFailure.h" />
 		<Unit filename="cpputest/include/CppUTest/TestFilter.h" />
 		<Unit filename="cpputest/include/CppUTest/TestHarness.h" />
@@ -504,7 +496,6 @@
 		<Unit filename="cpputest/include/CppUTest/Utest.h" />
 		<Unit filename="cpputest/include/CppUTest/UtestMacros.h" />
 		<Unit filename="cpputest/include/Platforms/Dos/Platform.h" />
-		<Unit filename="cpputest/include/Platforms/Gcc/Platform.h" />
 		<Unit filename="cpputest/include/Platforms/Symbian/Platform.h" />
 		<Unit filename="cpputest/include/Platforms/VisualCpp/Platform.h" />
 		<Unit filename="cpputest/include/Platforms/c2000/Platform.h" />
@@ -518,6 +509,15 @@
 			<Option target="CPPUEXT1" />
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
+			<Option target="CPPUEXT4" />
+		</Unit>
+		<Unit filename="cpputest/src/CppUTestExt/IEEE754ExceptionsPlugin.cpp">
+			<Option target="CppUTestExt" />
+			<Option target="RunAllTestsExt" />
+			<Option target="CppUTestExt-gcov" />
+			<Option target="RunAllTestsExt-gcov" />
+			<Option target="XCppUTestExt" />
+			<Option target="XRunAllTestsExt" />
 			<Option target="CPPUEXT4" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTestExt/MemoryReportAllocator.cpp">
@@ -1016,6 +1016,25 @@
 			<Option target="XRunAllTestsExt" />
 			<Option target="CPPUEXT1" />
 		</Unit>
+		<Unit filename="cpputest/tests/CppUTestExt/IEEE754PluginTest.cpp">
+			<Option target="RunAllTestsExt" />
+			<Option target="RunAllTestsExt-gcov" />
+			<Option target="XRunAllTestsExt" />
+			<Option target="CPPUEXT4" />
+		</Unit>
+		<Unit filename="cpputest/tests/CppUTestExt/IEEE754PluginTest_c.c">
+			<Option compilerVar="CC" />
+			<Option target="RunAllTestsExt" />
+			<Option target="RunAllTestsExt-gcov" />
+			<Option target="XRunAllTestsExt" />
+			<Option target="CPPUEXT4" />
+		</Unit>
+		<Unit filename="cpputest/tests/CppUTestExt/IEEE754PluginTest_c.h">
+			<Option target="RunAllTestsExt" />
+			<Option target="RunAllTestsExt-gcov" />
+			<Option target="XRunAllTestsExt" />
+			<Option target="CPPUEXT4" />
+		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/MemoryReportAllocatorTest.cpp">
 			<Option target="RunAllTestsExt" />
 			<Option target="RunAllTestsExt-gcov" />
@@ -1073,15 +1092,7 @@
 			<Option target="CPPUEXT3" />
 			<Option target="CPPUEXT4" />
 		</Unit>
-		<Unit filename="cpputest/tests/CppUTestExt/MockFailureReporterForTest.h">
-			<Option target="RunAllTestsExt" />
-			<Option target="RunAllTestsExt-gcov" />
-			<Option target="XRunAllTestsExt" />
-			<Option target="CPPUEXT1" />
-			<Option target="CPPUEXT2" />
-			<Option target="CPPUEXT3" />
-			<Option target="CPPUEXT4" />
-		</Unit>
+		<Unit filename="cpputest/tests/CppUTestExt/MockFailureReporterForTest.h" />
 		<Unit filename="cpputest/tests/CppUTestExt/MockFailureTest.cpp">
 			<Option target="RunAllTestsExt" />
 			<Option target="RunAllTestsExt-gcov" />
