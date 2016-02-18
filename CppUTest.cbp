@@ -374,7 +374,7 @@
 					<Add option="-ml" />
 					<Add option="-zm" />
 					<Add option="-bcl=dos" />
-					<Add option="-wcd=13 -wcd=367 -wcd=368 -wcd=391" />
+					<Add option="-ze -wcd=13 -wcd=367 -wcd=368 -wcd=391" />
 					<Add option="-dCPPUTEST_MEM_LEAK_DETECTION_DISABLED=1" />
 					<Add option="-dCPPUTEST_STD_CPP_LIB_DISABLED=1" />
 					<Add directory="cpputest" />
@@ -403,7 +403,8 @@
 			<Add option="-g" />
 			<Add option="-Werror" />
 			<Add option="-Wconversion" />
-			<Add option='-include &quot;CppuTest/MemoryLeakDetectorMallocMacros.h&quot;' />
+			<Add option='-include &quot;CppUTest/CppUTestConfig.h&quot;' />
+			<Add option='-include &quot;CppUTest/MemoryLeakDetectorMallocMacros.h&quot;' />
 			<Add option="-DCPPUTEST_USE_STD_CPP_LIB" />
 			<Add option="-DCPPUTEST_USE_MEM_LEAK_DETECTION" />
 			<Add directory="cpputest/include" />
@@ -495,7 +496,6 @@
 		<Unit filename="cpputest/include/CppUTest/TestTestingFixture.h" />
 		<Unit filename="cpputest/include/CppUTest/Utest.h" />
 		<Unit filename="cpputest/include/CppUTest/UtestMacros.h" />
-		<Unit filename="cpputest/include/Platforms/Dos/Platform.h" />
 		<Unit filename="cpputest/include/Platforms/Symbian/Platform.h" />
 		<Unit filename="cpputest/include/Platforms/VisualCpp/Platform.h" />
 		<Unit filename="cpputest/include/Platforms/c2000/Platform.h" />
