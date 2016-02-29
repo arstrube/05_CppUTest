@@ -194,7 +194,7 @@
 					<Add option="-ml" />
 					<Add option="-zm" />
 					<Add option="-bcl=dos" />
-					<Add option="-wcd=13 -wcd=367 -wcd=368 -wcd=391" />
+					<Add option="-wcd=13 -wcd=367 -wcd=368 -wcd=391 -wcd472" />
 					<Add option="-dCPPUTEST_MEM_LEAK_DETECTION_DISABLED=1" />
 					<Add option="-dCPPUTEST_STD_CPP_LIB_DISABLED=1" />
 					<Add directory="cpputest" />
@@ -230,7 +230,7 @@
 					<Add option="-ml" />
 					<Add option="-zm" />
 					<Add option="-bcl=dos" />
-					<Add option="-wcd=13 -wcd=367 -wcd=368 -wcd=391" />
+					<Add option="-wcd=13 -wcd=367 -wcd=368 -wcd=391 -wcd=472" />
 					<Add option="-dCPPUTEST_MEM_LEAK_DETECTION_DISABLED=1" />
 					<Add option="-dCPPUTEST_STD_CPP_LIB_DISABLED=1" />
 					<Add directory="cpputest" />
@@ -266,7 +266,7 @@
 					<Add option="-ml" />
 					<Add option="-zm" />
 					<Add option="-bcl=dos" />
-					<Add option="-wcd=13 -wcd=367 -wcd=368 -wcd=391" />
+					<Add option="-wcd=13 -wcd=367 -wcd=368 -wcd=391 -wcd=472" />
 					<Add option="-dCPPUTEST_MEM_LEAK_DETECTION_DISABLED=1" />
 					<Add option="-dCPPUTEST_STD_CPP_LIB_DISABLED=1" />
 					<Add directory="cpputest" />
@@ -302,7 +302,7 @@
 					<Add option="-ml" />
 					<Add option="-zm" />
 					<Add option="-bcl=dos" />
-					<Add option="-wcd=13 -wcd=367 -wcd=368 -wcd=391" />
+					<Add option="-wcd=13 -wcd=367 -wcd=368 -wcd=391 -wcd=472" />
 					<Add option="-dCPPUTEST_MEM_LEAK_DETECTION_DISABLED=1" />
 					<Add option="-dCPPUTEST_STD_CPP_LIB_DISABLED=1" />
 					<Add directory="cpputest" />
@@ -338,7 +338,7 @@
 					<Add option="-ml" />
 					<Add option="-zm" />
 					<Add option="-bcl=dos" />
-					<Add option="-wcd=13 -wcd=367 -wcd=368 -wcd=391" />
+					<Add option="-wcd=13 -wcd=367 -wcd=368 -wcd=391 -wcd=472" />
 					<Add option="-dCPPUTEST_MEM_LEAK_DETECTION_DISABLED=1" />
 					<Add option="-dCPPUTEST_STD_CPP_LIB_DISABLED=1" />
 					<Add directory="cpputest" />
@@ -374,7 +374,7 @@
 					<Add option="-ml" />
 					<Add option="-zm" />
 					<Add option="-bcl=dos" />
-					<Add option="-ze -wcd=13 -wcd=367 -wcd=368 -wcd=391" />
+					<Add option="-ze -wcd=13 -wcd=367 -wcd=368 -wcd=391 -wcd=472" />
 					<Add option="-dCPPUTEST_MEM_LEAK_DETECTION_DISABLED=1" />
 					<Add option="-dCPPUTEST_STD_CPP_LIB_DISABLED=1" />
 					<Add directory="cpputest" />
