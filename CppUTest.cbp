@@ -424,6 +424,9 @@
 		<Unit filename="cpputest/examples/AllTests/EventDispatcherTest.cpp">
 			<Option target="AllTests" />
 		</Unit>
+		<Unit filename="cpputest/examples/AllTests/FEDemoTest.cpp">
+			<Option target="AllTests" />
+		</Unit>
 		<Unit filename="cpputest/examples/AllTests/HelloTest.cpp">
 			<Option target="AllTests" />
 		</Unit>
