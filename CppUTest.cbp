@@ -444,6 +444,7 @@
 			<Add option="-g" />
 			<Add option="-Werror" />
 			<Add option="-Wconversion" />
+			<Add option="-Wno-long-long" />
 			<Add option='-include &quot;CppUTest/CppUTestConfig.h&quot;' />
 			<Add option='-include &quot;CppUTest/MemoryLeakDetectorMallocMacros.h&quot;' />
 			<Add option="-DCPPUTEST_USE_STD_CPP_LIB" />
@@ -1359,6 +1360,12 @@
 			<Option target="CPPU1" />
 		</Unit>
 		<Unit filename="cpputest/tests/TestUTestMacro.cpp">
+			<Option target="RunAllTests" />
+			<Option target="RunAllTests-gcov" />
+			<Option target="XRunAllTests" />
+			<Option target="CPPU3" />
+		</Unit>
+		<Unit filename="cpputest/tests/TestUTestMacro2.cpp">
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
 			<Option target="XRunAllTests" />
