@@ -197,6 +197,7 @@
 					<Add option="-wcd=13 -wcd=367 -wcd=368 -wcd=391 -wcd472" />
 					<Add option="-dCPPUTEST_MEM_LEAK_DETECTION_DISABLED=1" />
 					<Add option="-dCPPUTEST_STD_CPP_LIB_DISABLED=1" />
+					<Add option="-dCPPUTEST_USE_LONG_LONG=1" />
 					<Add directory="cpputest" />
 					<Add directory="cpputest/include" />
 					<Add directory="cpputest/include/Platforms/dos" />
@@ -233,6 +234,44 @@
 					<Add option="-wcd=13 -wcd=367 -wcd=368 -wcd=391 -wcd=472" />
 					<Add option="-dCPPUTEST_MEM_LEAK_DETECTION_DISABLED=1" />
 					<Add option="-dCPPUTEST_STD_CPP_LIB_DISABLED=1" />
+					<Add option="-dCPPUTEST_USE_LONG_LONG=1" />
+					<Add directory="cpputest" />
+					<Add directory="cpputest/include" />
+					<Add directory="cpputest/include/Platforms/dos" />
+				</Compiler>
+				<Linker>
+					<Add option="option map, stack=50k system dos" />
+					<Add directory="d:/bin/watcom/lib286/dos" />
+					<Add directory="d:/bin/watcom/lib286" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="D:\bin\DOSBox\DOSBox.exe exit -c $(TARGET_NAME).exe -c @pause -noconsole -exit" />
+					<Mode after="always" />
+				</ExtraCommands>
+			</Target>
+			<Target title="CPPU3">
+				<Option output="$(TARGET_NAME).exe" prefix_auto="1" extension_auto="0" />
+				<Option object_output="out" />
+				<Option type="1" />
+				<Option compiler="openwatcom_16bit_compiler" />
+				<Option projectCompilerOptionsRelation="1" />
+				<Option projectLinkerOptionsRelation="1" />
+				<Option projectIncludeDirsRelation="1" />
+				<Option projectLibDirsRelation="1" />
+				<Compiler>
+					<Add option="-xds" />
+					<Add option="-os" />
+					<Add option="-oc" />
+					<Add option="-d0" />
+					<Add option="-we" />
+					<Add option="-w=3" />
+					<Add option="-ml" />
+					<Add option="-zm" />
+					<Add option="-bcl=dos" />
+					<Add option="-wcd=13 -wcd=367 -wcd=368 -wcd=391 -wcd=472" />
+					<Add option="-dCPPUTEST_MEM_LEAK_DETECTION_DISABLED=1" />
+					<Add option="-dCPPUTEST_STD_CPP_LIB_DISABLED=1" />
+					<Add option="-dCPPUTEST_USE_LONG_LONG=1" />
 					<Add directory="cpputest" />
 					<Add directory="cpputest/include" />
 					<Add directory="cpputest/include/Platforms/dos" />
@@ -269,6 +308,7 @@
 					<Add option="-wcd=13 -wcd=367 -wcd=368 -wcd=391 -wcd=472" />
 					<Add option="-dCPPUTEST_MEM_LEAK_DETECTION_DISABLED=1" />
 					<Add option="-dCPPUTEST_STD_CPP_LIB_DISABLED=1" />
+					<Add option="-dCPPUTEST_USE_LONG_LONG=1" />
 					<Add directory="cpputest" />
 					<Add directory="cpputest/include" />
 					<Add directory="cpputest/include/Platforms/dos" />
@@ -305,6 +345,7 @@
 					<Add option="-wcd=13 -wcd=367 -wcd=368 -wcd=391 -wcd=472" />
 					<Add option="-dCPPUTEST_MEM_LEAK_DETECTION_DISABLED=1" />
 					<Add option="-dCPPUTEST_STD_CPP_LIB_DISABLED=1" />
+					<Add option="-dCPPUTEST_USE_LONG_LONG=1" />
 					<Add directory="cpputest" />
 					<Add directory="cpputest/include" />
 					<Add directory="cpputest/include/Platforms/dos" />
@@ -407,6 +448,7 @@
 			<Add option='-include &quot;CppUTest/MemoryLeakDetectorMallocMacros.h&quot;' />
 			<Add option="-DCPPUTEST_USE_STD_CPP_LIB" />
 			<Add option="-DCPPUTEST_USE_MEM_LEAK_DETECTION" />
+			<Add option="-DCPPUTEST_USE_LONG_LONG=1" />
 			<Add directory="cpputest/include" />
 			<Add directory="cpputest" />
 			<Add directory="CppUTest/src/Platforms/Gcc" />
@@ -513,6 +555,7 @@
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
 			<Option target="CPPUEXT4" />
+			<Option target="CPPU3" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTestExt/IEEE754ExceptionsPlugin.cpp">
 			<Option target="CppUTestExt" />
@@ -533,6 +576,7 @@
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
 			<Option target="CPPUEXT4" />
+			<Option target="CPPU3" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTestExt/MemoryReportFormatter.cpp">
 			<Option target="CppUTestExt" />
@@ -544,6 +588,7 @@
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
 			<Option target="CPPUEXT4" />
+			<Option target="CPPU3" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTestExt/MemoryReporterPlugin.cpp">
 			<Option target="CppUTestExt" />
@@ -555,6 +600,7 @@
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
 			<Option target="CPPUEXT4" />
+			<Option target="CPPU3" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTestExt/MockActualCall.cpp">
 			<Option target="CppUTestExt" />
@@ -568,6 +614,7 @@
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
 			<Option target="CPPUEXT4" />
+			<Option target="CPPU3" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTestExt/MockExpectedCall.cpp">
 			<Option target="CppUTestExt" />
@@ -581,6 +628,7 @@
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
 			<Option target="CPPUEXT4" />
+			<Option target="CPPU3" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTestExt/MockExpectedCallsList.cpp">
 			<Option target="CppUTestExt" />
@@ -592,6 +640,7 @@
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
 			<Option target="CPPUEXT4" />
+			<Option target="CPPU3" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTestExt/MockFailure.cpp">
 			<Option target="CppUTestExt" />
@@ -603,6 +652,7 @@
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
 			<Option target="CPPUEXT4" />
+			<Option target="CPPU3" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTestExt/MockNamedValue.cpp">
 			<Option target="CppUTestExt" />
@@ -614,6 +664,7 @@
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
 			<Option target="CPPUEXT4" />
+			<Option target="CPPU3" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTestExt/MockSupport.cpp">
 			<Option target="CppUTestExt" />
@@ -625,6 +676,7 @@
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
 			<Option target="CPPUEXT4" />
+			<Option target="CPPU3" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTestExt/MockSupportPlugin.cpp">
 			<Option target="CppUTestExt" />
@@ -636,6 +688,7 @@
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
 			<Option target="CPPUEXT4" />
+			<Option target="CPPU3" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTestExt/MockSupport_c.cpp">
 			<Option target="CppUTestExt" />
@@ -647,6 +700,7 @@
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
 			<Option target="CPPUEXT4" />
+			<Option target="CPPU3" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTestExt/OrderedTest.cpp">
 			<Option target="CppUTestExt" />
@@ -658,6 +712,7 @@
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
 			<Option target="CPPUEXT4" />
+			<Option target="CPPU3" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTest/CommandLineArguments.cpp">
 			<Option target="CppUTest" />
@@ -670,6 +725,7 @@
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
 			<Option target="CPPUEXT4" />
+			<Option target="CPPU3" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTest/CommandLineTestRunner.cpp">
 			<Option target="CppUTest" />
@@ -682,6 +738,7 @@
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
 			<Option target="CPPUEXT4" />
+			<Option target="CPPU3" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTest/JUnitTestOutput.cpp">
 			<Option target="CppUTest" />
@@ -694,6 +751,7 @@
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
 			<Option target="CPPUEXT4" />
+			<Option target="CPPU3" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTest/MemoryLeakDetector.cpp">
 			<Option target="CppUTest" />
@@ -706,6 +764,7 @@
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
 			<Option target="CPPUEXT4" />
+			<Option target="CPPU3" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTest/MemoryLeakWarningPlugin.cpp">
 			<Option target="CppUTest" />
@@ -718,6 +777,7 @@
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
 			<Option target="CPPUEXT4" />
+			<Option target="CPPU3" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTest/SimpleMutex.cpp">
 			<Option target="CppUTest" />
@@ -730,6 +790,7 @@
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
 			<Option target="CPPUEXT4" />
+			<Option target="CPPU3" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTest/SimpleString.cpp">
 			<Option target="CppUTest" />
@@ -742,6 +803,7 @@
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
 			<Option target="CPPUEXT4" />
+			<Option target="CPPU3" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTest/TeamCityTestOutput.cpp">
 			<Option target="CppUTest" />
@@ -756,6 +818,7 @@
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
 			<Option target="CPPUEXT4" />
+			<Option target="CPPU3" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTest/TestFailure.cpp">
 			<Option target="CppUTest" />
@@ -768,6 +831,7 @@
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
 			<Option target="CPPUEXT4" />
+			<Option target="CPPU3" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTest/TestFilter.cpp">
 			<Option target="CppUTest" />
@@ -780,6 +844,7 @@
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
 			<Option target="CPPUEXT4" />
+			<Option target="CPPU3" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTest/TestHarness_c.cpp">
 			<Option target="CppUTest" />
@@ -792,6 +857,7 @@
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
 			<Option target="CPPUEXT4" />
+			<Option target="CPPU3" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTest/TestMemoryAllocator.cpp">
 			<Option target="CppUTest" />
@@ -804,6 +870,7 @@
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
 			<Option target="CPPUEXT4" />
+			<Option target="CPPU3" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTest/TestOutput.cpp">
 			<Option target="CppUTest" />
@@ -816,6 +883,7 @@
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
 			<Option target="CPPUEXT4" />
+			<Option target="CPPU3" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTest/TestPlugin.cpp">
 			<Option target="CppUTest" />
@@ -828,6 +896,7 @@
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
 			<Option target="CPPUEXT4" />
+			<Option target="CPPU3" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTest/TestRegistry.cpp">
 			<Option target="CppUTest" />
@@ -840,6 +909,7 @@
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
 			<Option target="CPPUEXT4" />
+			<Option target="CPPU3" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTest/TestResult.cpp">
 			<Option target="CppUTest" />
@@ -852,6 +922,7 @@
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
 			<Option target="CPPUEXT4" />
+			<Option target="CPPU3" />
 		</Unit>
 		<Unit filename="cpputest/src/CppUTest/Utest.cpp">
 			<Option target="CppUTest" />
@@ -864,6 +935,7 @@
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
 			<Option target="CPPUEXT4" />
+			<Option target="CPPU3" />
 		</Unit>
 		<Unit filename="cpputest/src/Platforms/C2000/UtestPlatform.cpp">
 			<Option compile="0" />
@@ -879,6 +951,7 @@
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
 			<Option target="CPPUEXT4" />
+			<Option target="CPPU3" />
 		</Unit>
 		<Unit filename="cpputest/src/Platforms/GccNoStdC/UtestPlatform.cpp">
 			<Option link="0" />
@@ -988,6 +1061,7 @@
 			<Option target="CPPUEXT2" />
 			<Option target="CPPUEXT3" />
 			<Option target="CPPUEXT4" />
+			<Option target="CPPU3" />
 		</Unit>
 		<Unit filename="cpputest/tests/CppUTestExt/CodeMemoryReporterTest.cpp">
 			<Option target="RunAllTestsExt" />
@@ -1288,7 +1362,7 @@
 			<Option target="RunAllTests" />
 			<Option target="RunAllTests-gcov" />
 			<Option target="XRunAllTests" />
-			<Option target="CPPUEXT2" />
+			<Option target="CPPU3" />
 		</Unit>
 		<Unit filename="cpputest/tests/UtestPlatformTest.cpp">
 			<Option target="RunAllTests" />
